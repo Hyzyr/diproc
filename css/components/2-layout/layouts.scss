@@ -516,6 +516,7 @@
     flex-direction: column;
     gap: 20px;
     width: calc(43% - 10px);
+
     &._lg {
       width: calc(57% - 11px);
     }
@@ -583,7 +584,7 @@
       &-container {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         text-align: center;
         h4 {
           font-weight: 400;
@@ -600,7 +601,7 @@
       &-info {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 15px;
         width: calc(50% - 8px);
         h4,
         h5,
@@ -1113,6 +1114,17 @@
               }
             }
           }
+        }
+      }
+      &__item {
+        &-box {
+          gap: 25px;
+        }
+        &-info {
+          gap: 20px;
+        }
+        &-container {
+          gap: 30px;
         }
       }
     }

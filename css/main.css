@@ -2237,7 +2237,7 @@ html[data-theme=dark] .blogAbout__item-circle h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   text-align: center;
 }
 .blogAbout__item-container h4 {
@@ -2263,7 +2263,7 @@ html[data-theme=dark] .blogAbout__item-circle h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   width: calc(50% - 8px);
 }
 .blogAbout__item-info h4,
@@ -2897,6 +2897,15 @@ html[data-theme=dark] .range__button {
   }
   .blogAbout._sm .blogAbout__item:nth-child(3) {
     width: 100%;
+  }
+  .blogAbout__item-box {
+    gap: 25px;
+  }
+  .blogAbout__item-info {
+    gap: 20px;
+  }
+  .blogAbout__item-container {
+    gap: 30px;
   }
 
   .table__wrapper {
