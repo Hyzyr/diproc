@@ -24,10 +24,12 @@
       top: 64px;
       right: 64px;
       z-index: -3;
-      animation-name: rockit;
-      animation-duration: 3s;
+      animation-name: bubble-transparent;
+      animation-duration: 13s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
+      animation-fill-mode: both;
+      
       position: fixed;
       img {
         width: 100%;
@@ -50,6 +52,10 @@
         right: unset;
         left: 14%;
         bottom: 64px;
+      }
+      &:nth-child(1) {
+        animation-duration: 14s;
+        animation-delay: 0.4s;
       }
     }
     .buble {
@@ -674,8 +680,8 @@
     color: $primary;
     white-space: nowrap;
     background: $white;
-    @include inDarkMode{
-      border-color: #8C8C9C;
+    @include inDarkMode {
+      border-color: #8c8c9c;
       background: #31313b;
     }
   }
@@ -836,9 +842,9 @@
       width: calc(50% - 8px);
     }
   }
-  .table{
-    &__wrapper{
-    height: calc(100vh - 250px);
+  .table {
+    &__wrapper {
+      height: calc(100vh - 250px);
     }
   }
 }
@@ -938,9 +944,9 @@
       }
     }
   }
-  .table{
-    &__wrapper{
-    height: calc(100vh - 225px);
+  .table {
+    &__wrapper {
+      height: calc(100vh - 225px);
     }
   }
   .form {
@@ -1026,8 +1032,8 @@
       margin: 0 auto;
     }
   }
-  .table{
-    &__wrapper{
+  .table {
+    &__wrapper {
       height: auto;
     }
   }
