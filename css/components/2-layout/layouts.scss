@@ -664,7 +664,6 @@
     left: 0px;
     background: $gradient;
     transform: translate(0, -39%);
-    pointer-events: none;
     border-radius: 32px;
     border: 1px solid $white;
     background: $white-2;
@@ -674,8 +673,9 @@
     color: $primary;
     white-space: nowrap;
     background: $white;
-    @include inDarkMode{
-      border-color: #8C8C9C;
+    pointer-events: none;
+    @include inDarkMode {
+      border-color: #8c8c9c;
       background: #31313b;
     }
   }
@@ -836,9 +836,9 @@
       width: calc(50% - 8px);
     }
   }
-  .table{
-    &__wrapper{
-    height: calc(100vh - 250px);
+  .table {
+    &__wrapper {
+      height: calc(100vh - 250px);
     }
   }
 }
@@ -938,9 +938,9 @@
       }
     }
   }
-  .table{
-    &__wrapper{
-    height: calc(100vh - 225px);
+  .table {
+    &__wrapper {
+      height: calc(100vh - 225px);
     }
   }
   .form {
@@ -1026,8 +1026,8 @@
       margin: 0 auto;
     }
   }
-  .table{
-    &__wrapper{
+  .table {
+    &__wrapper {
       height: auto;
     }
   }
