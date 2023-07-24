@@ -2464,10 +2464,9 @@ html[data-theme=dark] .range input[type=range]::-webkit-slider-runnable-track {
   color: var(--primary);
   white-space: nowrap;
   background: var(--white);
-  pointer-events: none;
 }
 html[data-theme=dark] .range__button {
-  border-color: #8c8c9c;
+  border-color: #8C8C9C;
   background: #31313b;
 }
 
@@ -2679,7 +2678,6 @@ html[data-theme=dark] .range__button {
   .main__content {
     padding-left: 80px;
   }
-
   .blogAbout__item {
     padding: 15px;
   }
@@ -2730,46 +2728,6 @@ html[data-theme=dark] .range__button {
   .blogCard {
     width: calc(50% - 8px);
   }
-<<<<<<< HEAD
-=======
-  .blogAbout {
-    width: 100%;
-  }
-  .blogAbout._lg {
-    width: 100%;
-  }
-  .blogAbout._sm {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .blogAbout._sm .blogAbout__item {
-    width: calc(50% - 10px);
-  }
-  .blogAbout._sm .blogAbout__item:nth-child(1) {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-  }
-  .blogAbout._sm .blogAbout__item:nth-child(2) {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-  }
-  .blogAbout._sm .blogAbout__item:nth-child(3) {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    width: calc(70% - 10px);
-  }
-
->>>>>>> f8879cf3b8f2e05113dd51209085f7f2492d2701
   .table__wrapper {
     height: calc(100vh - 250px);
   }
@@ -2859,28 +2817,6 @@ html[data-theme=dark] .range__button {
   .blogInfo__group .button {
     width: calc(50% - 11px);
   }
-<<<<<<< HEAD
-=======
-  .blogAbout._sm .blogAbout__item:nth-child(1) {
-    width: 100%;
-  }
-  .blogAbout._sm .blogAbout__item:nth-child(2) {
-    width: 100%;
-  }
-  .blogAbout._sm .blogAbout__item:nth-child(3) {
-    width: 100%;
-  }
-  .blogAbout__item-box {
-    gap: 25px;
-  }
-  .blogAbout__item-info {
-    gap: 20px;
-  }
-  .blogAbout__item-container {
-    gap: 30px;
-  }
-
->>>>>>> f8879cf3b8f2e05113dd51209085f7f2492d2701
   .table__wrapper {
     height: calc(100vh - 225px);
   }
@@ -3058,13 +2994,9 @@ html[data-theme=dark] .range__button {
   .modal p {
     font-size: 14px;
   }
-<<<<<<< HEAD
-=======
-
   .blog__inner {
     padding-bottom: 100px;
   }
->>>>>>> f8879cf3b8f2e05113dd51209085f7f2492d2701
   .blog__inner-content {
     height: calc(100vh - 178px);
   }
