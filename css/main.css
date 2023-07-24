@@ -813,6 +813,9 @@ html[data-theme=dark] .button--primary {
 .button--ico .ico {
   font-size: inherit;
 }
+.button--ico:hover {
+  opacity: 0.5;
+}
 .button--icoBorder {
   width: 3em;
   height: 3em;

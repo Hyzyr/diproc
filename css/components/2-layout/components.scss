@@ -1,4 +1,3 @@
-
 .input {
   display: flex;
   width: 100%;
@@ -103,6 +102,9 @@
     padding: 0;
     .ico {
       font-size: inherit;
+    }
+    &:hover {
+      opacity: 0.5;
     }
   }
   &--icoBorder {
@@ -475,25 +477,19 @@
 }
 
 @mixin components-1280 {
-
 }
 @mixin components-1160 {
- 
 }
 @mixin components-1025 {
-
   .range {
     padding: 20px 32px;
   }
 }
 @mixin components-768 {
- 
 }
-@mixin components-580{
- 
+@mixin components-580 {
 }
 @mixin compoennts-460 {
-
 }
 @mixin components-390 {
   .button {
