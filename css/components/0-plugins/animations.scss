@@ -79,14 +79,15 @@
 
 @keyframes bubble-transparent {
   0% {
-    opacity: 0;
+    opacity: 1;
+    transform: translate(10%, 10%);
   }
   50% {
     opacity: 0.4;
   }
   100% {
-    transform: translateY(-20%);
-    opacity: 0;
+    transform: translateY(-10%);
+    opacity: 1;
   }
 }
 

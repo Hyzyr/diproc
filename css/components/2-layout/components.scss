@@ -23,8 +23,8 @@
       top: 64px;
       right: 64px;
       z-index: -3;
-      animation-name: rockit;
-      animation-duration: 3s;
+      animation-name: bubble-transparent;
+      animation-duration: 18s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
       img {
@@ -48,6 +48,10 @@
         right: unset;
         left: 14%;
         bottom: 64px;
+      }
+      &:nth-child(2) {
+        animation-duration: 16s;
+        animation-delay: 1s;
       }
     }
     .buble {
@@ -642,8 +646,8 @@
     }
   }
 }
-@mixin components-580{
-  .main{
+@mixin components-580 {
+  .main {
     &__bg {
       &-sphere {
         top: -17%;
