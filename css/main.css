@@ -2317,8 +2317,8 @@ html[data-theme=dark] .range input[type=range]::-webkit-slider-runnable-track {
   top: 50%;
   left: 0px;
   background: var(--gradient);
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  -webkit-transform: translate(0, -39%);
+          transform: translate(0, -39%);
   pointer-events: none;
   border-radius: 32px;
   border: 1px solid var(--white);
@@ -2329,6 +2329,7 @@ html[data-theme=dark] .range input[type=range]::-webkit-slider-runnable-track {
   font-size: 12px;
   color: var(--primary);
   white-space: nowrap;
+  background: var(--white);
 }
 html[data-theme=dark] .range__button {
   border-color: #8C8C9C;

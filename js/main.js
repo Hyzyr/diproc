@@ -124,36 +124,20 @@ if (menu) {
 //     }
 //   });
 // }
-// if (range) {
-//   // rangeButton.style.left = range.value + "%";
-//   // range.addEventListener("input", () => {
-//   //   rangeButton.style.left = range.value + "%";
-//   //   console.log(range.value);
-//   // });
-//   setValue = () => {
-//     const newValue = Number(
-//         ((range.value - range.min) * 100) / (range.max - range.min)
-//       ),
-//       newPosition = 10 - newValue * 0.2;
 
-//     rangeButton.style.left = `calc(${newValue}% + (${newPosition}px))`;
-//     console.log(newPosition);
-//   };
-
-//   document.addEventListener("DOMContentLoaded", setValue);
-//   range.addEventListener("input", setValue);
-// }
-
-// const thumbSize = 5;
-// const rangeButton = document.getElementById("rangeButton");
-// const range = document.getElementById("range");
-
-// range.addEventListener("input", (e) => {
-//   const ratio = (range.value - range.min) / (range.max - range.min);
-//   let value = thumbSize / 10 + ratio * 100 - ratio * thumbSize;
-//   rangeButton.style.left = value + "%";
-//   console.log(value);
-// });
+const range = document.getElementById("range");
+if (range) {
+  const thumbSize = 5;
+  const rangeButton = document.getElementById("rangeButton");
+  const rangeAmount = document.getElementById("rangeAmount");
+  range.addEventListener("input", (e) => {
+    const ratio = (range.value - range.min) / (range.max - range.min);
+    let value = thumbSize / 10 + ratio * 100 - ratio * thumbSize;
+    rangeButton.style.left = value + "%";
+    rangeAmount.innerHTML = range.value;
+    console.log(value);
+  });
+}
 
 const themeBtn = document.getElementById("theme");
 if (themeBtn) {
