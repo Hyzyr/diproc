@@ -133,8 +133,12 @@ if (range) {
   range.addEventListener("input", (e) => {
     const ratio = (range.value - range.min) / (range.max - range.min);
     let value = thumbSize / 10 + ratio * 100 - ratio * thumbSize;
-    rangeButton.style.left = value + "%";
     rangeAmount.innerHTML = range.value;
+    if (range.value < 50) {
+      rangeButton.style.left = value + 5 + "%";
+    } else {
+      rangeButton.style.left = value + -2 + "%";
+    }
     console.log(value);
   });
 }

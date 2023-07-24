@@ -13,6 +13,7 @@
   --violet: #c4b5fd;
   --violet-2: #ede9fe;
   --gradient: linear-gradient(135deg, rgba(76, 29, 149, 0) 0%, #4c1d95 100%);
+  --green: #0f766e;
 }
 
 :root[data-theme="dark"] {
@@ -23,13 +24,14 @@
   --white-4: rgba(255, 255, 255, 0.06);
   --black: #fff;
   --black-2: #000;
-  --black-3: #CBD5E1;
+  --black-3: #cbd5e1;
   --black-4: rgba(0, 0, 0, 0.48);
   --red: #ef4444;
   --blue: #6366f1;
   --violet: #c4b5fd;
-  --violet-2: #1E293B;
+  --violet-2: #1e293b;
   --gradient: linear-gradient(135deg, rgba(76, 29, 149, 0) 0%, #4c1d95 100%);
+  --green: #0f766e;
 }
 
 $primary: var(--primary);
@@ -46,5 +48,6 @@ $violet-2: var(--violet-2);
 $red: var(--red);
 $blue: var(--blue);
 $gradient: var(--gradient);
+$green: var(--green);
 
 $font-primary: "Verdana", sans-serif;
