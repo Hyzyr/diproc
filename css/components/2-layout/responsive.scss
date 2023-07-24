@@ -9,7 +9,7 @@
 @media (max-width: 1160px) {
   @include components-1160;
   @include header-1160;
-
+  @include layouts-1160;
 }
 @media (max-width: 1025px) {
   @include components-1025;
