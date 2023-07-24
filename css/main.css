@@ -3014,11 +3014,11 @@ html[data-theme=dark] .range__button {
   }
   .blog__inner-content {
     height: calc(100vh - 232px);
-    min-height: unset;
+    min-height: 450px;
   }
   .blog__inner-content._sm {
     height: calc(100vh - 324px);
-    min-height: unset;
+    min-height: 450px;
   }
   .blog__inner-body {
     padding: 12px;
@@ -3096,11 +3096,9 @@ html[data-theme=dark] .range__button {
   }
   .blog__inner-content {
     height: calc(100vh - 178px);
-    min-height: 450px;
   }
   .blog__inner-content._sm {
     height: calc(100vh - 270px);
-    min-height: 450px;
   }
   .blog__inner-score h4._sm {
     font-size: 18px;
