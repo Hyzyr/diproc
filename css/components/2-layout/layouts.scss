@@ -516,7 +516,6 @@
     flex-direction: column;
     gap: 20px;
     width: calc(43% - 10px);
-
     &._lg {
       width: calc(57% - 11px);
     }
@@ -584,7 +583,7 @@
       &-container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         text-align: center;
         h4 {
           font-weight: 400;
@@ -601,7 +600,7 @@
       &-info {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 25px;
         width: calc(50% - 8px);
         h4,
         h5,
@@ -1201,6 +1200,7 @@
   .blog {
     &__inner {
       gap: 24px;
+      padding-bottom: 140px;
       &-content {
         height: calc(100vh - 232px);
         min-height: 450px;

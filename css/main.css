@@ -2237,7 +2237,7 @@ html[data-theme=dark] .blogAbout__item-circle h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   text-align: center;
 }
 .blogAbout__item-container h4 {
@@ -2263,7 +2263,7 @@ html[data-theme=dark] .blogAbout__item-circle h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   width: calc(50% - 8px);
 }
 .blogAbout__item-info h4,
@@ -3011,6 +3011,7 @@ html[data-theme=dark] .range__button {
 
   .blog__inner {
     gap: 24px;
+    padding-bottom: 140px;
   }
   .blog__inner-content {
     height: calc(100vh - 232px);
