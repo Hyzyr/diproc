@@ -126,18 +126,33 @@ if (menu) {
 // }
 
 const range = document.getElementById("range");
+const rangeButton = document.getElementById("rangeButton");
+let display_768 = window.matchMedia("(max-width: 768px)");
+let display_390 = window.matchMedia("(max-width: 390px)");
+let add = 5;
+let reducer = -2;
 if (range) {
   const thumbSize = 5;
-  const rangeButton = document.getElementById("rangeButton");
   const rangeAmount = document.getElementById("rangeAmount");
+  rangeButton.style.left = range.value + "%";
+  rangeAmount.innerHTML = range.value;
+
   range.addEventListener("input", (e) => {
     const ratio = (range.value - range.min) / (range.max - range.min);
     let value = thumbSize / 10 + ratio * 100 - ratio * thumbSize;
     rangeAmount.innerHTML = range.value;
+    if (display_768.matches) {
+      add = 8;
+      reducer = -6;
+    }
+    if (display_390.matches) {
+      add = 15;
+      reducer = -10;
+    }
     if (range.value < 50) {
-      rangeButton.style.left = value + 5 + "%";
+      rangeButton.style.left = value + add + "%";
     } else {
-      rangeButton.style.left = value + -2 + "%";
+      rangeButton.style.left = value + reducer + "%";
     }
     console.log(value);
   });

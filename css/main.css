@@ -1803,7 +1803,8 @@ html[data-theme=dark] .signInItem__image img._light {
   white-space: nowrap;
 }
 .blog__inner-content {
-  min-height: calc(100vh - 164px);
+  height: calc(100vh - 164px);
+  min-height: 450px;
   border-radius: 16px;
   background: var(--white-2);
   -webkit-backdrop-filter: blur(16px);
@@ -1814,7 +1815,7 @@ html[data-theme=dark] .signInItem__image img._light {
   border: 1px solid var(--white);
 }
 .blog__inner-content._sm {
-  min-height: calc(100vh - 266px);
+  height: calc(100vh - 266px);
 }
 .blog__inner-body {
   width: 100%;
@@ -2747,10 +2748,10 @@ html[data-theme=dark] .range__button {
   }
 
   .blog__inner-content {
-    min-height: calc(100vh - 112px);
+    height: calc(100vh - 112px);
   }
   .blog__inner-content._sm {
-    min-height: calc(100vh - 212px);
+    height: calc(100vh - 212px);
   }
   .blog__inner-category {
     -webkit-box-pack: start;
@@ -3022,7 +3023,7 @@ html[data-theme=dark] .range__button {
     padding-bottom: 140px;
   }
   .blog__inner-content {
-    height: calc(100vh - 232px);
+    height: calc(100vh - 238px);
     min-height: 450px;
   }
   .blog__inner-content._sm {
