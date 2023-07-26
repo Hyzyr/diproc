@@ -6,7 +6,7 @@ const swiper = new Swiper(".swiper", {
   fadeEffect: { crossFade: true },
   virtualTranslate: true,
   navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
+    nextEl: '.slider-next',
+    prevEl: '.slider-prev',
   },
 });
