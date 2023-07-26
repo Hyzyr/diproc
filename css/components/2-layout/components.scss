@@ -87,6 +87,7 @@
       z-index: -1;
       transition: all 0.3s ease;
       opacity: 1;
+      pointer-events: none;
     }
     &:hover {
       // background: transparent;
@@ -224,7 +225,7 @@
 .checkbox {
   display: inline-flex;
   position: relative;
-  font-size: 16px;
+  font-size: 1em;
   z-index: 0;
 
   input {
@@ -476,6 +477,34 @@
   }
 }
 
+// ----------------------------
+@mixin components-1024-1024 {
+  .input {
+    input {
+      padding: 1.2em;
+    }
+    &--text {
+      textarea {
+        min-height: 130px;
+      }
+    }
+  }
+  .checkbox {
+    &__outer {
+      font-size: 14px;
+    }
+  }
+}
+@mixin components-1024-950 {
+ 
+  .button {
+    &--border {
+      border-radius: 25px;
+    }
+  }
+}
+
+// ----------------------------
 @mixin components-1280 {
 }
 @mixin components-1160 {

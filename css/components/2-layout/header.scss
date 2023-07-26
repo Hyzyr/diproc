@@ -217,6 +217,18 @@
     }
   }
 }
+
+// ------------
+@mixin header-1024-950 {
+  .header {
+    padding: 14px;
+  }
+  .sidebar {
+    top: 16px;
+    height: calc(100% - 32px);
+  }
+}
+// ------------
 @mixin header-1280 {
   .sidebar {
     left: 15px;

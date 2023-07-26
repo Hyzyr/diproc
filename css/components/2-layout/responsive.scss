@@ -1,6 +1,18 @@
+@media (min-width: 1024px) and (max-height: 1024px) {
+  @include typography-1024-1024;
+  @include components-1024-1024;
+  @include layouts-1024-1024;
+}
+@media (min-width: 1024px) and (max-height: 950px) {
+  @include typography-1024-950;
+  @include components-1024-950;
+  @include header-1024-950;
+  @include layouts-1024-950;
+}
+
 @media (max-width: 1280px) {
   .autoContainer {
-    padding:0 24px;
+    padding: 0 24px;
   }
   @include components-1280;
   @include header-1280;
@@ -47,3 +59,8 @@
   @include header-390;
   @include layouts-390;
 }
+
+// @media( max-height:758px  min width 1025px  screen{
+
+// })
+
