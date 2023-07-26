@@ -549,7 +549,7 @@
       backdrop-filter: blur(16px);
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 25px;
       justify-content: space-between;
       .ico {
         font-size: 24px;
@@ -588,7 +588,7 @@
       &-container {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
         text-align: center;
         h4 {
           font-weight: 400;
@@ -602,7 +602,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 30px;
+        gap: 25px;
       }
       &-info {
         display: flex;
@@ -909,6 +909,11 @@
       }
     }
   }
+  .table {
+    &__wrapper {
+      height: calc(100vh - 293px);
+    }
+  }
 }
 @mixin layouts-1024-950 {
   .main {
@@ -957,6 +962,11 @@
       &__item {
         padding: 15px;
       }
+    }
+  }
+  .table {
+    &__wrapper {
+      height: calc(100vh - 214px);
     }
   }
 }
