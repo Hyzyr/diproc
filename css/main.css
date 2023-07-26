@@ -11858,7 +11858,7 @@ html[data-theme=dark] .signInItem__image img._light {
           flex-direction: column;
   gap: 16px;
   position: relative;
-  padding-bottom: 70px;
+  padding-bottom: 65px;
 }
 .blog__inner-group {
   display: -webkit-box;
@@ -12307,56 +12307,65 @@ html[data-theme=dark] .blogAbout__item-circle h4 {
 .swiper {
   width: 100%;
 }
-.swiper-prev {
-  bottom: 10px;
-  left: 0;
-}
-.swiper-prev::before {
-  content: "";
-  display: block;
+.swiper-button {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 75%;
-  height: 75%;
-  background: transparent;
-  border-left: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  -webkit-transform: translate(-25%, -50%) rotate(45deg);
-          transform: translate(-25%, -50%) rotate(45deg);
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid var(--white);
+  background: var(--white-2);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border-radius: 50%;
+  width: 2.3em;
+  height: 2.3em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.swiper-button span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 0.7em;
+  height: 0.7em;
+  color: currentColor;
+}
+.swiper-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.swiper-button:hover {
+  border-color: var(--primary);
+}
+.swiper-button:hover::before {
+  opacity: 0.1;
+}
+.swiper-prev {
+  bottom: 0;
+  right: 60px;
 }
 .swiper-next {
-  bottom: 10px;
+  bottom: 0;
   right: 0;
-}
-.swiper-next::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 75%;
-  height: 75%;
-  background: transparent;
-  border-right: 2px solid currentColor;
-  border-top: 2px solid currentColor;
-  -webkit-transform: translate(-75%, -50%) rotate(45deg);
-          transform: translate(-75%, -50%) rotate(45deg);
-}
-
-._arr {
-  cursor: pointer;
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  font-size: 25px;
-  color: var(--primary);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-  -moz-transition: all 0.2s ease-in-out 0s;
-}
-._arr:hover {
-  opacity: 0.7;
 }
 
 .avatar {
