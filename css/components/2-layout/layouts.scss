@@ -291,13 +291,17 @@
       overflow: auto;
       gap: 16px;
       min-height: 50px;
+      position: relative;
+      &._slider {
+        padding-bottom: 65px;
+        min-height: 114px;
+      }
     }
     &-info {
       display: flex;
       flex-direction: column;
       gap: 16px;
       position: relative;
-      padding-bottom: 65px;
     }
     &-group {
       display: flex;
@@ -634,6 +638,10 @@
 }
 .swiper {
   width: 100%;
+  &-slide {
+    width: auto !important;
+    margin-right: 16px;
+  }
 }
 .slider {
   &-arrow {

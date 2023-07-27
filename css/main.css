@@ -11733,6 +11733,11 @@ html[data-theme=dark] .signInItem__image img._light {
   overflow: auto;
   gap: 16px;
   min-height: 50px;
+  position: relative;
+}
+.blog__inner-buttons._slider {
+  padding-bottom: 65px;
+  min-height: 114px;
 }
 .blog__inner-info {
   display: -webkit-box;
@@ -11744,7 +11749,6 @@ html[data-theme=dark] .signInItem__image img._light {
           flex-direction: column;
   gap: 16px;
   position: relative;
-  padding-bottom: 65px;
 }
 .blog__inner-group {
   display: -webkit-box;
@@ -12193,6 +12197,10 @@ html[data-theme=dark] .blogAbout__item-circle h4 {
 
 .swiper {
   width: 100%;
+}
+.swiper-slide {
+  width: auto !important;
+  margin-right: 16px;
 }
 
 .slider-arrow {
