@@ -1,5 +1,5 @@
 const swiper = new Swiper(".swiper", {
-  loop: true,
+  loop: false,
   slidesPerView: "auto",
   speed: 300,
   // effect: "fade",

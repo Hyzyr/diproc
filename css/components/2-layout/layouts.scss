@@ -290,11 +290,14 @@
       display: flex;
       overflow: auto;
       gap: 16px;
-      min-height: 50px;
+      min-height: 52px;
       position: relative;
       &._slider {
         padding-bottom: 65px;
         min-height: 114px;
+      }
+      &._arrow-inLine {
+        padding: 0 60px;
       }
     }
     &-info {
@@ -653,16 +656,16 @@
     background: $white-2;
     backdrop-filter: blur(16px);
     border-radius: 50%;
-    width: 2.3em;
-    height: 2.3em;
+    width: 2.55em;
+    height: 2.55em;
     cursor: pointer;
     transition: all 0.3s ease;
     span {
-      position: relative;
-      display: flex;
-      width: 0.7em;
-      height: 0.7em;
-      color: currentColor;
+      font-size: 1.4em;
+      &::before{
+        position: relative;
+        top: 1px;
+      }
     }
     &::before {
       content: "";
@@ -683,6 +686,20 @@
         opacity: 0.1;
       }
     }
+    &._inLine {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      &.slider {
+        &-prev {
+          left: 0;
+        }
+        &-next {
+          right: 0;
+        }
+      }
+    }
   }
   &__arrows {
     position: absolute;
@@ -694,13 +711,14 @@
     .button {
       font-size: 16px;
       padding: 0.9em 1.2em;
-      border-radius: 1em;
+      border-radius: 2em;
       gap: 5px;
+      border-color: $primary;
       .ico {
         width: 0.7em;
         height: 0.7em;
         position: relative;
-        font-size: 20px;
+        font-size: 1.25em;
         &::before {
           position: absolute;
           top: 50%;
@@ -711,6 +729,10 @@
       &.slider {
         &-prev {
           padding-left: 0.7em;
+          color: $primary;
+          &::before {
+            opacity: 0;
+          }
         }
         &-next {
           padding-right: 0.7em;
@@ -1377,22 +1399,27 @@
 @mixin layouts-460 {
   .main {
     &__content {
-      padding: 0;
+      padding: 100px 0 0;
     }
   }
   .blog {
     &__inner {
       gap: 24px;
+      padding-bottom: 90px;
       &-content {
-        height: calc(100vh - 208px);
-        min-height: 450px;
+        height: auto;
+        min-height: unset;
+        backdrop-filter: unset;
+        background: unset;
+        border: unset;
+        border-radius: unset;
         &._sm {
-          height: calc(100vh - 297px);
-          min-height: 450px;
+          height: auto;
+          min-height: unset;
         }
       }
       &-body {
-        padding: 12px;
+        padding: 0 0 0 0;
       }
       &-row {
         gap: 12px;
@@ -1439,9 +1466,7 @@
     &__inner {
       gap: 20px;
       &-content {
-        height: calc(100vh - 170px);
         &._sm {
-          height: calc(100vh - 260px);
         }
       }
       &-body {

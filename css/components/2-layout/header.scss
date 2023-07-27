@@ -419,22 +419,38 @@
 }
 @mixin header-460 {
   .header {
+    width: 100%;
     padding: 24px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
     h4 {
       font-size: 20px;
     }
+    &.sticky {
+      padding: 10px 0;
+      border: 1px solid $white;
+      background: $white-2;
+      backdrop-filter: blur(16px);
+      animation-name: sticky;
+      animation-duration: 0.5s;
+      .button {
+        font-size: 14px;
+      }
+    }
   }
   .sidebar {
-    width: calc(100% - 48px);
+    width: 100%;
     height: 64px;
     top: unset;
-    bottom: 28px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 0;
     &__inner {
       width: 100%;
       height: 100%;
       padding: 15px 20px;
+      border-radius: 16px 16px 0 0;
       &-group {
         flex-direction: row;
         padding-top: unset;
@@ -451,7 +467,7 @@
       &__text {
         display: none;
       }
-      &._footer{
+      &._footer {
         margin-top: unset;
       }
     }
@@ -465,7 +481,5 @@
     }
   }
   .sidebar {
-    width: calc(100% - 30px);
-    bottom: 15px;
   }
 }

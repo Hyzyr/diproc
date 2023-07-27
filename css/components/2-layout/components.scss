@@ -262,7 +262,7 @@
       position: absolute;
       top: 38%;
       left: 50%;
-      transform: translate(-50% , -50%);
+      transform: translate(-50%, -50%);
     }
     &::after {
       content: "";
@@ -522,6 +522,7 @@
 @mixin components-580 {
 }
 @mixin compoennts-460 {
+
 }
 @mixin components-390 {
   .button {
