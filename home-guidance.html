@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
   <!-- <link rel="icon" href="images/logo-small.svg" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <title>blog</title>
 
 </head>
@@ -23,42 +24,42 @@
         </h4>
         <div class="sidebar__inner-group">
           <a href="./index.html" class="sidebarLink">
-            <span class="ico icon-home">
+            <span class="ico ri-dashboard-line">
             </span>
             <span class="sidebarLink__text">
               Home
             </span>
           </a>
           <a href="./home-guidance.html" class="sidebarLink active">
-            <span class="ico icon-lamp-on">
+            <span class="ico ri-lightbulb-line">
             </span>
             <span class="sidebarLink__text">
               Guidance
             </span>
           </a>
           <a href="./home-assessments.html" class="sidebarLink">
-            <span class="ico icon-note-2">
+            <span class="ico ri-article-line">
             </span>
             <span class="sidebarLink__text">
               Assessments
             </span>
           </a>
           <a href="#" class="sidebarLink">
-            <span class="ico icon-book">
+            <span class="ico ri-book-open-line">
             </span>
             <span class="sidebarLink__text">
               Resources
             </span>
           </a>
           <a href="#" class="sidebarLink">
-            <span class="ico icon-flash">
+            <span class="ico ri-flashlight-line">
             </span>
             <span class="sidebarLink__text">
               FAQ
             </span>
           </a>
           <a href="#" class="sidebarLink _footer">
-            <span class="ico icon-feedback">
+            <span class="ico ri-mail-send-line">
             </span>
             <span class="sidebarLink__text">
               Share Feedback
@@ -66,7 +67,7 @@
           </a>
         </div>
         <div class="sidebarSwitch">
-          <span class="ico icon-arrow-right">
+          <span class="ico ri-arrow-right-s-line">
           </span>
         </div>
       </div>
@@ -79,27 +80,29 @@
         <div class="autoContainer">
           <div class="header__inner">
             <div class="header__inner-container">
-              <div class="burger" id="menuBtn">
-                <span></span>
-              </div>
+              <button class="button button--icoBorder _menu" id="menuBtn">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </button>
               <h4>
-                Home
+                Guidance
               </h4>
             </div>
             <div class="header__inner-box">
               <button class="button button--icoBorder">
-                <span class="ico icon-moon">
+                <span class="ico ri-moon-line">
                 </span>
-                <span class="ico icon-sun">
+                <span class="ico ri-sun-line">
                 </span>
                 <input type="checkbox" id="theme">
               </button>
               <button class="button button--icoBorder">
-                <span class="ico icon-login">
+                <span class="ico ri-user-shared-line">
                 </span>
               </button>
               <button class="button button--icoBorder">
-                <span class="ico icon-logout">
+                <span class="ico ri-user-received-line">
                 </span>
               </button>
             </div>
@@ -170,33 +173,55 @@
                   </button>
                 </div>
                 <div class="blog__inner-info">
-                  <div class="blogInfo">
-                    <div class="blogInfo__box">
-                      <h5 class="_sm">
-                        01
-                      </h5>
-                      <span class="ico icon-info-circle"></span>
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="blogInfo">
+                          <div class="blogInfo__box">
+                            <h5 class="_sm">
+                              01
+                            </h5>
+                            <span class="ico ri-spam-2-line"></span>
+                          </div>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
+                            hendrerit
+                            urna.
+                            Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+                            vitae
+                            mattis tellus.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="blogInfo">
+                          <div class="blogInfo__box">
+                            <h5 class="_sm">
+                              02
+                            </h5>
+                            <span class="ico ri-spam-2-line"></span>
+                          </div>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
+                            hendrerit
+                            urna.
+                            Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+                            vitae
+                            mattis tellus.
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
-                      urna.
-                      Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae
-                      mattis tellus.
-                    </p>
                   </div>
-                  <div class="blogInfo">
-                    <div class="blogInfo__box">
-                      <h5 class="_sm">
-                        01
-                      </h5>
-                      <span class="ico icon-info-circle"></span>
+                  <div class="slider__arrows">
+                    <div class="slider-prev slider-arrow">
+                      <span class="custIcon--left">
+                      </span>
                     </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
-                      urna.
-                      Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae
-                      mattis tellus.
-                    </p>
+                    <div class="slider-next slider-arrow">
+                      <span class="custIcon--right">
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -250,6 +275,8 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
   <script src="js/main.js"></script>
 </body>
 

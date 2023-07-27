@@ -1,5 +1,5 @@
 .header {
-  padding: 26px 0;
+  padding: 22px 0 26px 0;
   &__inner {
     display: flex;
     align-items: center;
@@ -24,14 +24,14 @@
       display: none;
     }
     .button {
-      .icon-sun {
+      .ri-sun-line {
         display: none;
       }
       @include inDarkMode {
-        .icon-sun {
+        .ri-sun-line {
           display: block;
         }
-        .icon-moon {
+        .ri-moon-line {
           display: none;
         }
       }
@@ -44,7 +44,7 @@
   left: 32px;
   height: calc(100% - 64px);
   width: 288px;
-  z-index: 5;
+  z-index: 6;
   &__inner {
     height: 100%;
     border-radius: 16px;
@@ -87,6 +87,11 @@
       font-size: 1.2em;
       color: $black;
       transition: 0.3s ease;
+      &::before {
+        position: relative;
+        left: 2px;
+        top: 1px;
+      }
     }
     &:hover {
       .ico {
@@ -122,6 +127,10 @@
       font-size: 1.71em;
       color: inherit;
       transition: 0.3s ease;
+      &::before {
+        position: relative;
+        top: 1px;
+      }
     }
     &__text {
       font-size: 1em;
@@ -221,11 +230,14 @@
 // ------------
 @mixin header-1024-950 {
   .header {
-    padding: 14px;
+    padding: 16px 0 14px;
   }
   .sidebar {
     top: 16px;
     height: calc(100% - 32px);
+    &__inner {
+      padding-top: 25px;
+    }
   }
 }
 // ------------
@@ -296,7 +308,7 @@
     }
   }
 }
-@mixin header-1025 {
+@mixin header-1023 {
   // .header {
   //   padding: 25px 0;
 
@@ -416,7 +428,7 @@
     width: calc(100% - 48px);
     height: 64px;
     top: unset;
-    bottom: 48px;
+    bottom: 28px;
     left: 50%;
     transform: translateX(-50%);
     &__inner {
@@ -439,6 +451,9 @@
       &__text {
         display: none;
       }
+      &._footer{
+        margin-top: unset;
+      }
     }
   }
 }
@@ -451,6 +466,6 @@
   }
   .sidebar {
     width: calc(100% - 30px);
-    bottom: 20px;
+    bottom: 15px;
   }
 }
