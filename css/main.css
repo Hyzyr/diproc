@@ -11137,7 +11137,7 @@ html[data-theme=dark] .header__inner .button .ri-moon-line {
   left: 32px;
   height: calc(100% - 64px);
   width: 288px;
-  z-index: 5;
+  z-index: 6;
 }
 .sidebar__inner {
   height: 100%;
@@ -11766,6 +11766,7 @@ html[data-theme=dark] .signInItem__image img._light {
 }
 .blog__inner-group .button .icoImage {
   display: none;
+  font-size: 25px;
 }
 .blog__inner-group .button__group {
   display: -webkit-box;
@@ -13096,6 +13097,9 @@ html[data-theme=dark] .range__button {
   }
   .sidebarLink__text {
     display: none;
+  }
+  .sidebarLink._footer {
+    margin-top: unset;
   }
 
   .main__content {
