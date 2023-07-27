@@ -378,90 +378,56 @@
 }
 
 .icon-ok:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e800";
+} /* '' */
 .icon-caption:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e801";
+} /* '' */
 .icon-close-circle:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e802";
+} /* '' */
 .icon-flash:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e803";
+} /* '' */
 .icon-info-circle:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e804";
+} /* '' */
 .icon-login:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e805";
+} /* '' */
 .icon-moon:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e806";
+} /* '' */
 .icon-sun:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e807";
+} /* '' */
 .icon-note-2:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e808";
+} /* '' */
 .icon-user-octagon:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e809";
+} /* '' */
 .icon-arrow-right:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e80a";
+} /* '' */
 .icon-feedback:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e80b";
+} /* '' */
 .icon-home:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e80c";
+} /* '' */
 .icon-lamp-on:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e80d";
+} /* '' */
 .icon-note-1:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e80e";
+} /* '' */
 .icon-book:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e80f";
+} /* '' */
 .icon-logout:before {
-  content: "";
-}
-
-/* '' */
+  content: "\e810";
+} /* '' */
 :root {
   --primary: #14b8a6;
   --white: #fff;
@@ -2621,23 +2587,19 @@ html[data-theme=dark] .range__button {
   h3 {
     font-size: 25px;
   }
-
   p {
     font-size: 14px;
     line-height: 1.7em;
   }
-
   .input input {
     padding: 1.2em;
   }
   .input--text textarea {
     min-height: 130px;
   }
-
   .checkbox__outer {
     font-size: 14px;
   }
-
   .blog__inner {
     gap: 25px;
   }
@@ -2645,11 +2607,9 @@ html[data-theme=dark] .range__button {
     gap: 24px;
     padding: 25px;
   }
-
   .form__inner-container {
     gap: 10px;
   }
-
   .table__wrapper {
     height: calc(100vh - 293px);
   }
@@ -2658,24 +2618,19 @@ html[data-theme=dark] .range__button {
   p {
     line-height: 1.65em;
   }
-
   .button--border {
     border-radius: 25px;
   }
-
   .header {
     padding: 14px;
   }
-
   .sidebar {
     top: 16px;
     height: calc(100% - 32px);
   }
-
   .main__content {
     padding: 16px 0 16px 320px;
   }
-
   .blog__inner {
     gap: 16px;
   }
@@ -2711,7 +2666,6 @@ html[data-theme=dark] .range__button {
   .blogCategory__item {
     padding: 15px;
   }
-
   .table__wrapper {
     height: calc(100vh - 214px);
   }
@@ -2720,12 +2674,10 @@ html[data-theme=dark] .range__button {
   .autoContainer {
     padding: 0 24px;
   }
-
   .sidebar {
     left: 15px;
     width: 260px;
   }
-
   .main__content {
     padding-left: 275px;
   }
@@ -2802,11 +2754,9 @@ html[data-theme=dark] .range__button {
   .sidebar.active .sidebar__inner {
     width: 200px;
   }
-
   .main__content {
     padding-left: 80px;
   }
-
   .blogAbout__item {
     padding: 15px;
   }
@@ -2815,16 +2765,13 @@ html[data-theme=dark] .range__button {
   .range {
     padding: 20px 32px;
   }
-
   .header {
     padding: 15px 0;
   }
-
   .sidebar {
     top: 15px;
     height: calc(100% - 30px);
   }
-
   .main__content {
     padding: 15px 0 15px 80px;
   }
@@ -2836,7 +2783,6 @@ html[data-theme=dark] .range__button {
     left: 0%;
     bottom: -5%;
   }
-
   .blog__inner-content {
     min-height: calc(100vh - 112px);
   }
@@ -2893,7 +2839,6 @@ html[data-theme=dark] .range__button {
   .blogAbout._sm .blogAbout__item {
     width: calc(50% - 10px);
   }
-
   .table__wrapper {
     height: calc(100vh - 250px);
   }
@@ -2923,11 +2868,9 @@ html[data-theme=dark] .range__button {
   h3 {
     font-size: 28px;
   }
-
   .sidebar {
     left: 5px;
   }
-
   .main__content {
     padding: 15px 0 15px 70px;
   }
@@ -2939,7 +2882,6 @@ html[data-theme=dark] .range__button {
     left: -10%;
     bottom: -10%;
   }
-
   .blog__inner-body {
     padding: 18px;
     gap: 24px;
@@ -3005,11 +2947,9 @@ html[data-theme=dark] .range__button {
   .blogAbout._sm .blogAbout__item:nth-child(3) {
     width: 100%;
   }
-
   .table__wrapper {
     height: calc(100vh - 225px);
   }
-
   .form__container-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3024,7 +2964,6 @@ html[data-theme=dark] .range__button {
   h3 {
     font-size: 26px;
   }
-
   .main__bg-sphere {
     top: -17%;
     right: -60%;
@@ -3033,7 +2972,6 @@ html[data-theme=dark] .range__button {
     left: -15%;
     bottom: -15%;
   }
-
   .blog__inner-category .checkbox__outer {
     width: 100%;
     padding: 20px;
@@ -3068,14 +3006,12 @@ html[data-theme=dark] .range__button {
   h3 {
     font-size: 24px;
   }
-
   .header {
     padding: 24px 0;
   }
   .header h4 {
     font-size: 20px;
   }
-
   .sidebar {
     width: calc(100% - 48px);
     height: 64px;
@@ -3111,11 +3047,9 @@ html[data-theme=dark] .range__button {
   .sidebarLink__text {
     display: none;
   }
-
   .main__content {
     padding: 0;
   }
-
   .blog__inner {
     gap: 24px;
     padding-bottom: 140px;
@@ -3139,7 +3073,6 @@ html[data-theme=dark] .range__button {
     max-width: 500px;
     margin: 0 auto;
   }
-
   .table__wrapper {
     height: auto;
   }
@@ -3148,35 +3081,28 @@ html[data-theme=dark] .range__button {
   .autoContainer {
     padding: 0 15px;
   }
-
   h4 {
     font-size: 20px;
   }
-
   p {
     line-height: 1.7em;
   }
-
   .button--primary {
     padding: 16px 15px;
   }
-
   .input--text input {
     padding: 14px 15px;
   }
-
   .header {
     padding: 15px 0;
   }
   .header .button {
     font-size: 14px;
   }
-
   .sidebar {
     width: calc(100% - 30px);
     bottom: 20px;
   }
-
   .signIn {
     padding: 20px 15px;
   }
@@ -3186,7 +3112,6 @@ html[data-theme=dark] .range__button {
   .signInItem {
     padding: 15px;
   }
-
   .modal {
     padding: 20px 15px;
   }
@@ -3202,7 +3127,6 @@ html[data-theme=dark] .range__button {
   .modal p {
     font-size: 14px;
   }
-
   .blog__inner {
     padding-bottom: 100px;
   }
