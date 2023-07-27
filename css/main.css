@@ -11736,10 +11736,6 @@ html[data-theme=dark] .signInItem__image img._light {
   position: relative;
 }
 .blog__inner-buttons._slider {
-  padding-bottom: 65px;
-  min-height: 114px;
-}
-.blog__inner-buttons._arrow-inLine {
   padding: 0 60px;
 }
 .blog__inner-info {
@@ -12269,9 +12265,6 @@ html[data-theme=dark] .blogAbout__item-circle h4 {
   right: 0;
 }
 .slider__arrows {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12279,6 +12272,10 @@ html[data-theme=dark] .blogAbout__item-circle h4 {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: auto;
 }
 .slider__arrows .button {
   font-size: 16px;

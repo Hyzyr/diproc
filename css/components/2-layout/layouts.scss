@@ -293,10 +293,6 @@
       min-height: 52px;
       position: relative;
       &._slider {
-        padding-bottom: 65px;
-        min-height: 114px;
-      }
-      &._arrow-inLine {
         padding: 0 60px;
       }
     }
@@ -702,12 +698,11 @@
     }
   }
   &__arrows {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: flex-end;
+    margin-top: auto;
     .button {
       font-size: 16px;
       padding: 0.9em 1.2em;
