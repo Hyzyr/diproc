@@ -116,7 +116,6 @@
   margin: 0 auto;
   padding: 0 32px;
 }
-
 .signIn {
   display: flex;
   height: 100vh;
@@ -293,7 +292,7 @@
       min-height: 52px;
       position: relative;
       &._slider {
-        padding: 0 60px;
+        padding: 0 45px;
       }
     }
     &-info {
@@ -345,11 +344,21 @@
       }
     }
     &-footer {
-      margin: auto 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin-top: auto;
+
       .button {
         border-radius: 32px;
         font-size: 14px;
         padding: 1.2em 1.65em;
+
+        &--primary {
+          min-width: 120px;
+        }
       }
     }
     &-score {
@@ -644,7 +653,7 @@
 }
 .slider {
   &-arrow {
-    font-size: 20px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -658,7 +667,7 @@
     transition: all 0.3s ease;
     span {
       font-size: 1.4em;
-      &::before{
+      &::before {
         position: relative;
         top: 1px;
       }
