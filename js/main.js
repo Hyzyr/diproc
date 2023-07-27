@@ -130,7 +130,7 @@ const rangeButton = document.getElementById("rangeButton");
 let display_768 = window.matchMedia("(max-width: 768px)");
 let display_390 = window.matchMedia("(max-width: 390px)");
 let add = 5;
-let reducer = -2;
+let reducer = -1;
 if (range) {
   const thumbSize = 5;
   const rangeAmount = document.getElementById("rangeAmount");

@@ -235,10 +235,9 @@
     font-size: inherit;
     opacity: 0;
     cursor: pointer;
-
     &:checked + .checkbox__ico {
       background: $primary;
-      img {
+      &::before {
         opacity: 1;
       }
     }
@@ -254,11 +253,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    img {
-      width: 18px;
-      height: 18px;
+    color: $white;
+    &::before {
       opacity: 0;
-      transition: 0.3s ease-in;
+      transition: 0.3s ease-in-out;
+      width: 1em;
+      height: 1em;
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50% , -50%);
     }
     &::after {
       content: "";
@@ -496,7 +500,6 @@
   }
 }
 @mixin components-1024-950 {
- 
   .button {
     &--border {
       border-radius: 25px;

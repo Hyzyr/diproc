@@ -24,14 +24,14 @@
       display: none;
     }
     .button {
-      .icon-sun {
+      .ri-sun-line {
         display: none;
       }
       @include inDarkMode {
-        .icon-sun {
+        .ri-sun-line {
           display: block;
         }
-        .icon-moon {
+        .ri-moon-line {
           display: none;
         }
       }
@@ -87,6 +87,11 @@
       font-size: 1.2em;
       color: $black;
       transition: 0.3s ease;
+      &::before {
+        position: relative;
+        left: 2px;
+        top: 1px;
+      }
     }
     &:hover {
       .ico {
@@ -122,6 +127,10 @@
       font-size: 1.71em;
       color: inherit;
       transition: 0.3s ease;
+      &::before {
+        position: relative;
+        top: 1px;
+      }
     }
     &__text {
       font-size: 1em;
