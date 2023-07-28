@@ -72,8 +72,6 @@
     top: 20px;
     right: -1em;
     border: 1px solid $white;
-    background: $white-2;
-    backdrop-filter: blur(16px);
     // display: flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +81,8 @@
     height: 2em;
     display: none;
     cursor: pointer;
+    background: $white-2;
+    backdrop-filter: blur(16px);
     .ico {
       font-size: 1.2em;
       color: $black;
