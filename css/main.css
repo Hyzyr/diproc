@@ -11508,6 +11508,7 @@ html[data-theme=dark] .main__bg::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+  width: 100%;
 }
 .signIn__inner-header {
   display: -webkit-box;
@@ -11544,6 +11545,9 @@ html[data-theme=dark] .main__bg::after {
   border: 1px solid var(--white);
   border-radius: 50%;
 }
+html[data-theme=dark] .signIn__inner-logo {
+  background: #494a53;
+}
 .signIn__inner-logo .ico {
   font-size: 1em;
   color: var(--primary);
@@ -11571,6 +11575,28 @@ html[data-theme=dark] .main__bg::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 12px;
+}
+.signIn__inner-text a {
+  color: var(--primary);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+}
+.signIn__inner-text a:hover {
+  opacity: 0.7;
+}
+.signIn__inner-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.signIn__inner-devider {
+  text-align: center;
+  padding: 15px 0;
 }
 .signInItem {
   font-size: 20px;
@@ -11662,6 +11688,15 @@ html[data-theme=dark] .signInItem__image img._light {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.signIn .button--primary {
+  padding: 1.18em 1.5em;
+}
+.signIn .badge {
+  text-align: right;
+}
+.signIn .badge a {
+  color: var(--primary);
 }
 
 .dashboard__inner {
@@ -12677,6 +12712,10 @@ html[data-theme=dark] .range__button {
   .table__wrapper {
     height: calc(100vh - 293px);
   }
+
+  .signIn .button--primary {
+    padding: 1em 1.5em;
+  }
 }
 @media (min-width: 1024px) and (max-height: 950px) {
   p {
@@ -13233,6 +13272,9 @@ html[data-theme=dark] .range__button {
   }
   .signInItem {
     padding: 15px;
+  }
+  .signIn .button--primary {
+    padding: 0.9em 1em;
   }
 
   .modal {
