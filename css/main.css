@@ -11600,7 +11600,7 @@ html[data-theme=dark] .signIn__inner-logo {
 }
 .signInItem {
   font-size: 20px;
-  padding: 1em;
+  padding: 0.8em 1em;
   border: 1px solid var(--white);
   background: var(--white-2);
   -webkit-backdrop-filter: blur(16px);
@@ -11621,8 +11621,8 @@ html[data-theme=dark] .signIn__inner-logo {
   cursor: pointer;
 }
 .signInItem__image {
-  width: 1.2em;
-  height: 1.2em;
+  width: 1em;
+  height: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11662,7 +11662,11 @@ html[data-theme=dark] .signInItem__image img._light {
   margin-bottom: -3px;
 }
 .signInItem .button {
-  font-size: 1.2em;
+  font-size: 1em;
+}
+.signInItem .button .ico {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .signInItem::before {
   content: "";

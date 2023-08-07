@@ -153,7 +153,6 @@
       border-radius: 50%;
       @include inDarkMode {
         background: #494a53;
-
       }
       .ico {
         font-size: 1em;
@@ -194,7 +193,7 @@
   }
   &Item {
     font-size: 20px;
-    padding: 1em;
+    padding: 0.8em 1em;
     border: 1px solid $white;
     background: $white-2;
     backdrop-filter: blur(16px);
@@ -206,8 +205,8 @@
     position: relative;
     cursor: pointer;
     &__image {
-      width: 1.2em;
-      height: 1.2em;
+      width: 1em;
+      height: 1em;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -238,7 +237,10 @@
       }
     }
     .button {
-      font-size: 1.2em;
+      font-size: 1em;
+      .ico{
+        transform: scale(1.1);
+      }
     }
     &::before {
       content: "";
