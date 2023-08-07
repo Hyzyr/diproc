@@ -242,7 +242,7 @@
     display: flex;
   }
 }
-.blog {
+.dashboard {
   &__inner {
     display: flex;
     flex-direction: column;
@@ -542,7 +542,7 @@
       width: calc(57% - 11px);
     }
     &._sm {
-      .blog {
+      .dashboard {
         &About {
           &__item {
             &:nth-child(1) {
@@ -1009,7 +1009,7 @@
 
 // ----------------------
 @mixin layouts-1024-1024 {
-  .blog {
+  .dashboard {
     &__inner {
       gap: 25px;
       &-body {
@@ -1037,7 +1037,7 @@
       padding: 16px 0 16px 320px;
     }
   }
-  .blog {
+  .dashboard {
     &__inner {
       gap: 16px;
       &-content {
@@ -1101,16 +1101,10 @@
       }
     }
   }
-  .blog {
+  .dashboard {
     &__inner {
       &-body {
         // padding: 26px;
-      }
-      &-about {
-      }
-    }
-    &About {
-      &._lg {
       }
     }
   }
@@ -1121,7 +1115,7 @@
       padding-left: 80px;
     }
   }
-  .blog {
+  .dashboard {
     &About {
       &__item {
         padding: 15px;
@@ -1145,7 +1139,7 @@
       }
     }
   }
-  .blog {
+  .dashboard {
     &__inner {
       &-content {
         height: calc(100vh - 112px);
@@ -1183,7 +1177,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
-        .blog {
+        .dashboard {
           &About {
             &__item {
               width: calc(50% - 10px);
@@ -1200,7 +1194,7 @@
   }
 }
 @mixin layouts-940 {
-  .blog {
+  .dashboard {
     &__inner {
       &-category {
         .checkbox__outer {
@@ -1246,7 +1240,7 @@
       }
     }
   }
-  .blog {
+  .dashboard {
     &__inner {
       &-body {
         padding: 18px;
@@ -1308,7 +1302,7 @@
         }
       }
       &._sm {
-        .blog {
+        .dashboard {
           &About {
             &__item {
               width: 100%;
@@ -1355,7 +1349,7 @@
       }
     }
   }
-  .blog {
+  .dashboard {
     &__inner {
       &-category {
         .checkbox__outer {
@@ -1406,7 +1400,7 @@
       padding: 100px 0 0;
     }
   }
-  .blog {
+  .dashboard {
     &__inner {
       gap: 24px;
       padding-bottom: 90px;
@@ -1466,7 +1460,7 @@
       font-size: 14px;
     }
   }
-  .blog {
+  .dashboard {
     &__inner {
       gap: 20px;
       &-content {

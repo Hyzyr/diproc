@@ -1,274 +1,262 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- <link rel="icon" href="images/logo-small.svg" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <title>blog</title>
-  </head>
 
-  <body>
-    <div class="main">
-      <!-- #sidebar start -->
-      <nav class="sidebar" id="menu">
-        <div class="sidebar__inner">
-          <h4><span class="text text--primary"> App </span> Name</h4>
-          <div class="sidebar__inner-group">
-            <a href="./index.html" class="sidebarLink">
-              <span class="ico ri-dashboard-line"> </span>
-              <span class="sidebarLink__text"> Home </span>
-            </a>
-            <a href="./home-guidance.html" class="sidebarLink active">
-              <span class="ico ri-lightbulb-line"> </span>
-              <span class="sidebarLink__text"> Guidance </span>
-            </a>
-            <a href="./home-assessments.html" class="sidebarLink">
-              <span class="ico ri-article-line"> </span>
-              <span class="sidebarLink__text"> Assessments </span>
-            </a>
-            <a href="#" class="sidebarLink">
-              <span class="ico ri-book-open-line"> </span>
-              <span class="sidebarLink__text"> Resources </span>
-            </a>
-            <a href="#" class="sidebarLink">
-              <span class="ico ri-flashlight-line"> </span>
-              <span class="sidebarLink__text"> FAQ </span>
-            </a>
-            <a href="#" class="sidebarLink _footer">
-              <span class="ico ri-mail-send-line"> </span>
-              <span class="sidebarLink__text"> Share Feedback </span>
-            </a>
-          </div>
-          <div class="sidebarSwitch">
-            <span class="ico ri-arrow-right-s-line"> </span>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- <link rel="icon" href="images/logo-small.svg" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="main">
+    <!-- #sidebar start -->
+    <nav class="sidebar" id="menu">
+      <div class="sidebar__inner">
+        <h4><span class="text text--primary"> App </span> Name</h4>
+        <div class="sidebar__inner-group">
+          <a href="./index.html" class="sidebarLink">
+            <span class="ico ri-dashboard-line"> </span>
+            <span class="sidebarLink__text"> Home </span>
+          </a>
+          <a href="./home-guidance.html" class="sidebarLink active">
+            <span class="ico ri-lightbulb-line"> </span>
+            <span class="sidebarLink__text"> Guidance </span>
+          </a>
+          <a href="./home-assessments.html" class="sidebarLink">
+            <span class="ico ri-article-line"> </span>
+            <span class="sidebarLink__text"> Assessments </span>
+          </a>
+          <a href="#" class="sidebarLink">
+            <span class="ico ri-book-open-line"> </span>
+            <span class="sidebarLink__text"> Resources </span>
+          </a>
+          <a href="#" class="sidebarLink">
+            <span class="ico ri-flashlight-line"> </span>
+            <span class="sidebarLink__text"> FAQ </span>
+          </a>
+          <a href="#" class="sidebarLink _footer">
+            <span class="ico ri-mail-send-line"> </span>
+            <span class="sidebarLink__text"> Share Feedback </span>
+          </a>
         </div>
-      </nav>
-      <!-- #sidebar end -->
-      <!-- #main__content start -->
-      <div class="main__content">
-        <!-- #header start -->
-        <header class="header">
-          <div class="autoContainer">
-            <div class="header__inner">
-              <div class="header__inner-container">
-                <button class="button button--icoBorder _menu" id="menuBtn">
-                  <div class="burger">
-                    <span></span>
-                  </div>
-                </button>
-                <h4>Guidance</h4>
-              </div>
-              <div class="header__inner-box">
-                <button class="button button--icoBorder">
-                  <span class="ico ri-moon-line"> </span>
-                  <span class="ico ri-sun-line"> </span>
-                  <input type="checkbox" id="theme" />
-                </button>
-                <button class="button button--icoBorder">
-                  <span class="ico ri-user-shared-line"> </span>
-                </button>
-                <button class="button button--icoBorder">
-                  <span class="ico ri-user-received-line"> </span>
-                </button>
-              </div>
+        <div class="sidebarSwitch">
+          <span class="ico ri-arrow-right-s-line"> </span>
+        </div>
+      </div>
+    </nav>
+    <!-- #sidebar end -->
+    <!-- #main__content start -->
+    <div class="main__content">
+      <!-- #header start -->
+      <header class="header">
+        <div class="autoContainer">
+          <div class="header__inner">
+            <div class="header__inner-container">
+              <button class="button button--icoBorder _menu" id="menuBtn">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </button>
+              <h4>Guidance</h4>
+            </div>
+            <div class="header__inner-box">
+              <button class="button button--icoBorder">
+                <span class="ico ri-moon-line"> </span>
+                <span class="ico ri-sun-line"> </span>
+                <input type="checkbox" id="theme" />
+              </button>
+              <button class="button button--icoBorder">
+                <span class="ico ri-user-shared-line"> </span>
+              </button>
+              <button class="button button--icoBorder">
+                <span class="ico ri-user-received-line"> </span>
+              </button>
             </div>
           </div>
-        </header>
-        <!-- #header end -->
-        <!-- #blog start -->
-        <section class="blog">
-          <div class="autoContainer">
-            <div class="blog__inner">
-              <div class="range">
-                <input
-                  type="range"
-                  id="range"
-                  min="1"
-                  max="128"
-                  value="20"
-                  step="1"
-                />
-                <button class="range__button" id="rangeButton">
-                  <span id="rangeAmount">1</span> of 128
-                </button>
-              </div>
-              <div class="blog__inner-content _sm">
-                <div class="blog__inner-body">
-                  <div class="blog__inner-buttons _slider">
-                    <div class="swiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <button class="button button--border active">
-                            In The Cloud
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            Off The Cloud
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            AI and Machine Learning
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">Network</button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            In The Cloud
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            Off The Cloud
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            AI and Machine Learning
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">Network</button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            In The Cloud
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            Off The Cloud
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            AI and Machine Learning
-                          </button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">Network</button>
-                        </div>
-                        <div class="swiper-slide">
-                          <button class="button button--border">
-                            In The Cloud
-                          </button>
-                        </div>
+        </div>
+      </header>
+      <!-- #header end -->
+      <!-- #dashboard start -->
+      <section class="dashboard">
+        <div class="autoContainer">
+          <div class="dashboard__inner">
+            <div class="range">
+              <input type="range" id="range" min="1" max="128" value="20" step="1" />
+              <button class="range__button" id="rangeButton">
+                <span id="rangeAmount">1</span> of 128
+              </button>
+            </div>
+            <div class="dashboard__inner-content _sm">
+              <div class="dashboard__inner-body">
+                <div class="dashboard__inner-buttons _slider">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <button class="button button--border active">
+                          In The Cloud
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          Off The Cloud
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          AI and Machine Learning
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">Network</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          In The Cloud
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          Off The Cloud
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          AI and Machine Learning
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">Network</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          In The Cloud
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          Off The Cloud
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          AI and Machine Learning
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">Network</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="button button--border">
+                          In The Cloud
+                        </button>
                       </div>
                     </div>
-                    <div class="slider-prev slider-arrow _inLine">
-                      <span class="ico ri-arrow-left-s-line"> </span>
-                    </div>
-                    <div class="slider-next slider-arrow _inLine">
-                      <span class="ico ri-arrow-right-s-line"> </span>
-                    </div>
                   </div>
-                  <div class="blog__inner-info">
-                    <div class="blogInfo">
-                      <div class="blogInfo__box">
-                        <h5 class="_sm">01</h5>
-                        <span class="ico ri-spam-2-line"></span>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut et massa mi. Aliquam in hendrerit urna. Pellentesque
-                        sit amet sapien fringilla, mattis ligula consectetur,
-                        ultrices mauris. Maecenas vitae mattis tellus.
-                      </p>
-                    </div>
-                    <div class="blogInfo">
-                      <div class="blogInfo__box">
-                        <h5 class="_sm">02</h5>
-                        <span class="ico ri-spam-2-line"></span>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut et massa mi. Aliquam in hendrerit urna. Pellentesque
-                        sit amet sapien fringilla, mattis ligula consectetur,
-                        ultrices mauris. Maecenas vitae mattis tellus.
-                      </p>
-                    </div>
+                  <div class="slider-prev slider-arrow _inLine">
+                    <span class="ico ri-arrow-left-s-line"> </span>
                   </div>
-                  <div class="blog__inner-footer">
-                    <div class="button button--icoBorder">
-                      <span class="ico ri-arrow-left-line"> </span>
-                    </div>
-                    <div class="button button--icoBorder">
-                      <span class="ico ri-arrow-right-line"> </span>
-                    </div>
-                    <button class="button button--border">
-                      <span class="ico ri-arrow-left-s-line"> </span>
-                      <span class="text"> Prev </span>
-                    </button>
-                    <button class="button button--primary">
-                      <span class="text"> Next </span>
-                      <span class="ico ri-arrow-right-s-line"> </span>
-                    </button>
+                  <div class="slider-next slider-arrow _inLine">
+                    <span class="ico ri-arrow-right-s-line"> </span>
                   </div>
+                </div>
+                <div class="dashboard__inner-info">
+                  <div class="dashboardInfo">
+                    <div class="dashboardInfo__box">
+                      <h5 class="_sm">01</h5>
+                      <span class="ico ri-spam-2-line"></span>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut et massa mi. Aliquam in hendrerit urna. Pellentesque
+                      sit amet sapien fringilla, mattis ligula consectetur,
+                      ultrices mauris. Maecenas vitae mattis tellus.
+                    </p>
+                  </div>
+                  <div class="dashboardInfo">
+                    <div class="dashboardInfo__box">
+                      <h5 class="_sm">02</h5>
+                      <span class="ico ri-spam-2-line"></span>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut et massa mi. Aliquam in hendrerit urna. Pellentesque
+                      sit amet sapien fringilla, mattis ligula consectetur,
+                      ultrices mauris. Maecenas vitae mattis tellus.
+                    </p>
+                  </div>
+                </div>
+                <div class="dashboard__inner-footer">
+                  <div class="button button--icoBorder">
+                    <span class="ico ri-arrow-left-line"> </span>
+                  </div>
+                  <div class="button button--icoBorder">
+                    <span class="ico ri-arrow-right-line"> </span>
+                  </div>
+                  <button class="button button--border">
+                    <span class="ico ri-arrow-left-s-line"> </span>
+                    <span class="text"> Prev </span>
+                  </button>
+                  <button class="button button--primary">
+                    <span class="text"> Next </span>
+                    <span class="ico ri-arrow-right-s-line"> </span>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- #blog end -->
-      </div>
-      <!-- #main__content end -->
-      <!-- #modal start -->
-      <div class="modal">
-        <div class="modal__inner">
-          <div class="modal__inner-header">
-            <h4>Rationale</h4>
-            <div class="modal__inner-close"></div>
-          </div>
-          <div class="modal__inner-info">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue.
-            </p>
-          </div>
         </div>
-      </div>
-      <!-- #modal end -->
-      <div class="main__bg">
-        <div class="main__bg-sphere">
-          <img src="./images/sphere/sphere-red.png" alt="" class="_light" />
-          <img src="./images/sphere/sphere-violet.png" alt="" class="_dark" />
+      </section>
+      <!-- #dashboard end -->
+    </div>
+    <!-- #main__content end -->
+    <!-- #modal start -->
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__inner-header">
+          <h4>Rationale</h4>
+          <div class="modal__inner-close"></div>
         </div>
-        <div class="main__bg-sphere _sm">
-          <img src="./images/sphere/sphere-red-sm.png" alt="" class="_light" />
-          <img
-            src="./images/sphere/sphere-violet-sm.png"
-            alt=""
-            class="_dark"
-          />
+        <div class="modal__inner-info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+            massa mi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+            fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+            vitae mattis tellus. Nullam quis imperdiet augue.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+            fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+            vitae mattis tellus. Nullam quis imperdiet augue.
+          </p>
         </div>
-        <div class="buble"></div>
-        <div class="buble _sm"></div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <!-- #modal end -->
+    <div class="main__bg">
+      <div class="main__bg-sphere">
+        <img src="./images/sphere/sphere-red.png" alt="" class="_light" />
+        <img src="./images/sphere/sphere-violet.png" alt="" class="_dark" />
+      </div>
+      <div class="main__bg-sphere _sm">
+        <img src="./images/sphere/sphere-red-sm.png" alt="" class="_light" />
+        <img src="./images/sphere/sphere-violet-sm.png" alt="" class="_dark" />
+      </div>
+      <div class="buble"></div>
+      <div class="buble _sm"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
