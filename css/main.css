@@ -11784,10 +11784,11 @@ html[data-theme=dark] .signInItem__image img._light {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
 .dashboard__inner-box .ico {
-  font-size: 24px;
+  font-size: 30px;
+  padding-top: 2px;
 }
 .dashboard__inner-category {
   display: -webkit-box;

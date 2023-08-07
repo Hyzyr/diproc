@@ -324,9 +324,10 @@
     &-box {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 10px;
       .ico {
-        font-size: 24px;
+        font-size: 30px;
+        padding-top: 2px;
       }
     }
     &-category {
