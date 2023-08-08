@@ -132,6 +132,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
     &-header {
       display: flex;
       flex-direction: column;
@@ -150,6 +151,9 @@
       backdrop-filter: blur(16px);
       border: 1px solid $white;
       border-radius: 50%;
+      @include inDarkMode {
+        background: #494a53;
+      }
       .ico {
         font-size: 1em;
         color: $primary;
@@ -169,10 +173,27 @@
       flex-direction: column;
       gap: 12px;
     }
+    &-text {
+      a {
+        color: $primary;
+        @include transition;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+    }
+    &-devider {
+      text-align: center;
+      padding: 15px 0;
+    }
   }
   &Item {
     font-size: 20px;
-    padding: 1em;
+    padding: 0.8em 1em;
     border: 1px solid $white;
     background: $white-2;
     backdrop-filter: blur(16px);
@@ -184,8 +205,8 @@
     position: relative;
     cursor: pointer;
     &__image {
-      width: 1.2em;
-      height: 1.2em;
+      width: 1em;
+      height: 1em;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -216,7 +237,10 @@
       }
     }
     .button {
-      font-size: 1.2em;
+      font-size: 1em;
+      .ico {
+        transform: scale(1.1);
+      }
     }
     &::before {
       content: "";
@@ -240,6 +264,17 @@
   }
   .autoContainer {
     display: flex;
+  }
+  .button {
+    &--primary {
+      padding: 1.18em 1.5em;
+    }
+  }
+  .badge {
+    text-align: right;
+    a {
+      color: $primary;
+    }
   }
 }
 .dashboard {
@@ -301,7 +336,7 @@
       gap: 16px;
       position: relative;
     }
-    &-group {
+    &-title {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -320,16 +355,17 @@
           gap: 16px;
         }
       }
-    }
-    &-box {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      .ico {
-        font-size: 30px;
-        padding-top: 2px;
+      &-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .ico {
+          font-size: 30px;
+          padding-top: 2px;
+        }
       }
     }
+
     &-category {
       display: flex;
       justify-content: space-between;
@@ -426,6 +462,9 @@
       .ico {
         color: $primary;
         font-size: 1.2em;
+      }
+      .button {
+        font-size: inherit;
       }
     }
     &__group {
@@ -1031,6 +1070,13 @@
       height: calc(100vh - 293px);
     }
   }
+  .signIn {
+    .button {
+      &--primary {
+        padding: 1em 1.5em;
+      }
+    }
+  }
 }
 @mixin layouts-1024-950 {
   .main {
@@ -1051,7 +1097,7 @@
         padding: 20px;
         gap: 16px;
       }
-      &-group {
+      &-title {
         .button {
           padding: 0.8em 1em;
           border-radius: 25px;
@@ -1247,7 +1293,7 @@
         padding: 18px;
         gap: 24px;
       }
-      &-group {
+      &-title {
         .button {
           border-radius: 50%;
           font-size: 14px;
@@ -1444,6 +1490,11 @@
     }
     &Item {
       padding: 15px;
+    }
+    .button {
+      &--primary {
+        padding: 0.9em 1em;
+      }
     }
   }
   .modal {

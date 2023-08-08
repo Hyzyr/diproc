@@ -10685,7 +10685,7 @@ html[data-theme=dark] .button--primary {
   color: #fff;
 }
 .button--ico {
-  padding: 0;
+  padding: 0 !important;
 }
 .button--ico .ico {
   font-size: inherit;
@@ -11505,6 +11505,7 @@ html[data-theme=dark] .main__bg::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+  width: 100%;
 }
 .signIn__inner-header {
   display: -webkit-box;
@@ -11541,6 +11542,9 @@ html[data-theme=dark] .main__bg::after {
   border: 1px solid var(--white);
   border-radius: 50%;
 }
+html[data-theme=dark] .signIn__inner-logo {
+  background: #494a53;
+}
 .signIn__inner-logo .ico {
   font-size: 1em;
   color: var(--primary);
@@ -11569,9 +11573,31 @@ html[data-theme=dark] .main__bg::after {
           flex-direction: column;
   gap: 12px;
 }
+.signIn__inner-text a {
+  color: var(--primary);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+}
+.signIn__inner-text a:hover {
+  opacity: 0.7;
+}
+.signIn__inner-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.signIn__inner-devider {
+  text-align: center;
+  padding: 15px 0;
+}
 .signInItem {
   font-size: 20px;
-  padding: 1em;
+  padding: 0.8em 1em;
   border: 1px solid var(--white);
   background: var(--white-2);
   -webkit-backdrop-filter: blur(16px);
@@ -11592,8 +11618,8 @@ html[data-theme=dark] .main__bg::after {
   cursor: pointer;
 }
 .signInItem__image {
-  width: 1.2em;
-  height: 1.2em;
+  width: 1em;
+  height: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11633,7 +11659,11 @@ html[data-theme=dark] .signInItem__image img._light {
   margin-bottom: -3px;
 }
 .signInItem .button {
-  font-size: 1.2em;
+  font-size: 1em;
+}
+.signInItem .button .ico {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .signInItem::before {
   content: "";
@@ -11659,6 +11689,15 @@ html[data-theme=dark] .signInItem__image img._light {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.signIn .button--primary {
+  padding: 1.18em 1.5em;
+}
+.signIn .badge {
+  text-align: right;
+}
+.signIn .badge a {
+  color: var(--primary);
 }
 
 .dashboard__inner {
@@ -11746,7 +11785,7 @@ html[data-theme=dark] .signInItem__image img._light {
   gap: 16px;
   position: relative;
 }
-.dashboard__inner-group {
+.dashboard__inner-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11757,24 +11796,24 @@ html[data-theme=dark] .signInItem__image img._light {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.dashboard__inner-group h3 {
+.dashboard__inner-title h3 {
   font-weight: 400;
 }
-.dashboard__inner-group .button {
+.dashboard__inner-title .button {
   border-radius: 32px;
   padding: 1.05em 1.45em;
 }
-.dashboard__inner-group .button .icoImage {
+.dashboard__inner-title .button .icoImage {
   display: none;
   font-size: 25px;
 }
-.dashboard__inner-group .button__group {
+.dashboard__inner-title .button__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
-.dashboard__inner-box {
+.dashboard__inner-title-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11783,7 +11822,7 @@ html[data-theme=dark] .signInItem__image img._light {
           align-items: center;
   gap: 10px;
 }
-.dashboard__inner-box .ico {
+.dashboard__inner-title-group .ico {
   font-size: 30px;
   padding-top: 2px;
 }
@@ -11930,6 +11969,9 @@ html[data-theme=dark] .signInItem__image img._light {
 .dashboardInfo__box .ico {
   color: var(--primary);
   font-size: 1.2em;
+}
+.dashboardInfo__box .button {
+  font-size: inherit;
 }
 .dashboardInfo__group {
   display: -webkit-box;
@@ -12668,6 +12710,9 @@ html[data-theme=dark] .range__button {
   .table__wrapper {
     height: calc(100vh - 293px);
   }
+  .signIn .button--primary {
+    padding: 1em 1.5em;
+  }
 }
 @media (min-width: 1024px) and (max-height: 950px) {
   p {
@@ -12702,7 +12747,7 @@ html[data-theme=dark] .range__button {
     padding: 20px;
     gap: 16px;
   }
-  .dashboard__inner-group .button {
+  .dashboard__inner-title .button {
     padding: 0.8em 1em;
     border-radius: 25px;
   }
@@ -12944,17 +12989,17 @@ html[data-theme=dark] .range__button {
     padding: 18px;
     gap: 24px;
   }
-  .dashboard__inner-group .button {
+  .dashboard__inner-title .button {
     border-radius: 50%;
     font-size: 14px;
     width: 3.71em;
     height: 3.71em;
     padding: unset;
   }
-  .dashboard__inner-group .button .text {
+  .dashboard__inner-title .button .text {
     display: none;
   }
-  .dashboard__inner-group .button .icoImage {
+  .dashboard__inner-title .button .icoImage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12967,13 +13012,13 @@ html[data-theme=dark] .range__button {
     width: 1.71em;
     height: 1.71em;
   }
-  .dashboard__inner-group .button .icoImage img {
+  .dashboard__inner-title .button .icoImage img {
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .dashboard__inner-group h3 ._hide {
+  .dashboard__inner-title h3 ._hide {
     display: none;
   }
   .dashboard__inner-category .checkbox__outer {
@@ -13191,6 +13236,9 @@ html[data-theme=dark] .range__button {
   }
   .signInItem {
     padding: 15px;
+  }
+  .signIn .button--primary {
+    padding: 0.9em 1em;
   }
   .modal {
     padding: 20px 15px;
