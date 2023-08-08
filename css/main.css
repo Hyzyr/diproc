@@ -11973,14 +11973,8 @@ html[data-theme=dark] .signInItem__image img._light {
   color: var(--primary);
   font-size: 1.2em;
 }
-.dashboardInfo__box button {
+.dashboardInfo__box .button {
   font-size: inherit;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-  -moz-transition: all 0.2s ease-in-out 0s;
-}
-.dashboardInfo__box button:hover {
-  opacity: 0.6;
 }
 .dashboardInfo__group {
   display: -webkit-box;
