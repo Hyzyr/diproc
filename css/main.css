@@ -10688,7 +10688,7 @@ html[data-theme=dark] .button--primary {
   color: #fff;
 }
 .button--ico {
-  padding: 0;
+  padding: 0 !important;
 }
 .button--ico .ico {
   font-size: inherit;
