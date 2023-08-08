@@ -184,6 +184,10 @@
       color: $primary;
     }
   }
+  &--smIco {
+    padding: 0;
+    font-size: inherit;
+  }
 
   &:active {
     opacity: 0.7;
@@ -504,7 +508,6 @@
     &--border {
       border-radius: 25px;
     }
-    
   }
 }
 
@@ -523,7 +526,6 @@
 @mixin components-580 {
 }
 @mixin compoennts-460 {
-
 }
 @mixin components-390 {
   .button {
