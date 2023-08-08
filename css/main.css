@@ -10780,10 +10780,6 @@ html[data-theme=dark] .button--primary {
 .button--border.active {
   color: var(--primary);
 }
-.button--smIco {
-  padding: 0;
-  font-size: inherit;
-}
 .button:active {
   opacity: 0.7;
 }
@@ -11976,6 +11972,15 @@ html[data-theme=dark] .signInItem__image img._light {
 .dashboardInfo__box .ico {
   color: var(--primary);
   font-size: 1.2em;
+}
+.dashboardInfo__box button {
+  font-size: inherit;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+}
+.dashboardInfo__box button:hover {
+  opacity: 0.8;
 }
 .dashboardInfo__group {
   display: -webkit-box;

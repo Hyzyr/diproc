@@ -238,7 +238,7 @@
     }
     .button {
       font-size: 1em;
-      .ico{
+      .ico {
         transform: scale(1.1);
       }
     }
@@ -461,6 +461,13 @@
       .ico {
         color: $primary;
         font-size: 1.2em;
+      }
+      button {
+        font-size: inherit;
+        @include transition;
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
     &__group {
@@ -1042,7 +1049,6 @@
     color: $black-3;
   }
 }
-
 
 // ----------------------
 @mixin layouts-1024-1024 {
