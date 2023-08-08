@@ -336,7 +336,7 @@
       gap: 16px;
       position: relative;
     }
-    &-group {
+    &-title {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -355,16 +355,17 @@
           gap: 16px;
         }
       }
-    }
-    &-box {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      .ico {
-        font-size: 30px;
-        padding-top: 2px;
+      &-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .ico {
+          font-size: 30px;
+          padding-top: 2px;
+        }
       }
     }
+
     &-category {
       display: flex;
       justify-content: space-between;
@@ -1096,7 +1097,7 @@
         padding: 20px;
         gap: 16px;
       }
-      &-group {
+      &-title {
         .button {
           padding: 0.8em 1em;
           border-radius: 25px;
@@ -1292,7 +1293,7 @@
         padding: 18px;
         gap: 24px;
       }
-      &-group {
+      &-title {
         .button {
           border-radius: 50%;
           font-size: 14px;

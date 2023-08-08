@@ -11788,7 +11788,7 @@ html[data-theme=dark] .signInItem__image img._light {
   gap: 16px;
   position: relative;
 }
-.dashboard__inner-group {
+.dashboard__inner-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11799,24 +11799,24 @@ html[data-theme=dark] .signInItem__image img._light {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.dashboard__inner-group h3 {
+.dashboard__inner-title h3 {
   font-weight: 400;
 }
-.dashboard__inner-group .button {
+.dashboard__inner-title .button {
   border-radius: 32px;
   padding: 1.05em 1.45em;
 }
-.dashboard__inner-group .button .icoImage {
+.dashboard__inner-title .button .icoImage {
   display: none;
   font-size: 25px;
 }
-.dashboard__inner-group .button__group {
+.dashboard__inner-title .button__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
-.dashboard__inner-box {
+.dashboard__inner-title-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11825,7 +11825,7 @@ html[data-theme=dark] .signInItem__image img._light {
           align-items: center;
   gap: 10px;
 }
-.dashboard__inner-box .ico {
+.dashboard__inner-title-group .ico {
   font-size: 30px;
   padding-top: 2px;
 }
@@ -12762,7 +12762,7 @@ html[data-theme=dark] .range__button {
     padding: 20px;
     gap: 16px;
   }
-  .dashboard__inner-group .button {
+  .dashboard__inner-title .button {
     padding: 0.8em 1em;
     border-radius: 25px;
   }
@@ -13017,17 +13017,17 @@ html[data-theme=dark] .range__button {
     padding: 18px;
     gap: 24px;
   }
-  .dashboard__inner-group .button {
+  .dashboard__inner-title .button {
     border-radius: 50%;
     font-size: 14px;
     width: 3.71em;
     height: 3.71em;
     padding: unset;
   }
-  .dashboard__inner-group .button .text {
+  .dashboard__inner-title .button .text {
     display: none;
   }
-  .dashboard__inner-group .button .icoImage {
+  .dashboard__inner-title .button .icoImage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -13040,13 +13040,13 @@ html[data-theme=dark] .range__button {
     width: 1.71em;
     height: 1.71em;
   }
-  .dashboard__inner-group .button .icoImage img {
+  .dashboard__inner-title .button .icoImage img {
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .dashboard__inner-group h3 ._hide {
+  .dashboard__inner-title h3 ._hide {
     display: none;
   }
   .dashboard__inner-category .checkbox__outer {
