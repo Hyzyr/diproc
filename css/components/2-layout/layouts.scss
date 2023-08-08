@@ -346,9 +346,16 @@
       .button {
         border-radius: 32px;
         padding: 1.05em 1.45em;
-        .icoImage {
-          display: none;
-          font-size: 25px;
+        &--primary {
+          .ico {
+            display: none;
+            font-size: 25px;
+          }
+          &._ico {
+            .ico {
+              display: flex;
+            }
+          }
         }
         &__group {
           display: flex;
@@ -359,9 +366,14 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        .ico {
-          font-size: 30px;
-          padding-top: 2px;
+        .button {
+          &--ico {
+            font-size: 30px;
+            .ico {
+              padding-top: 4px;
+              font-size: inherit;
+            }
+          }
         }
       }
     }
@@ -1035,7 +1047,7 @@
     }
   }
 }
-.box {
+.content {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1295,24 +1307,48 @@
       }
       &-title {
         .button {
-          border-radius: 50%;
-          font-size: 14px;
-          width: 3.71em;
-          height: 3.71em;
-          padding: unset;
           .text {
             display: none;
           }
-          .icoImage {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 1.71em;
-            height: 1.71em;
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: contain;
+          &--primary {
+            padding: 0.9em 1.2em;
+            &._sm {
+              border-radius: 50%;
+              font-size: 14px;
+              width: 3.71em;
+              height: 3.71em;
+              padding: unset;
+              .ico {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.71em;
+                height: 1.71em;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            }
+            &._ico {
+              border-radius: 50%;
+              font-size: 14px;
+              width: 3.71em;
+              height: 3.71em;
+              padding: unset;
+              .ico {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.71em;
+                height: 1.71em;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
             }
           }
         }
