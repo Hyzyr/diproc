@@ -11980,7 +11980,7 @@ html[data-theme=dark] .signInItem__image img._light {
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 .dashboardInfo__box button:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .dashboardInfo__group {
   display: -webkit-box;
