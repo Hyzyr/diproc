@@ -17,6 +17,7 @@
     pointer-events: none;
     &-sphere {
       width: 512px;
+      height: 512px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -48,6 +49,7 @@
       }
       &._sm {
         width: 256px;
+        height: 256px;
         top: unset;
         right: unset;
         left: 14%;
@@ -96,7 +98,7 @@
       z-index: -2;
     }
     &::after {
-      content: "";
+      // content: "";
       width: 100%;
       height: 100%;
       position: absolute;
@@ -432,6 +434,10 @@
           width: 1px;
           height: 28px;
           background: $white;
+        }
+        strong {
+          font-size: 20px;
+          color: $primary;
         }
       }
     }
@@ -1056,6 +1062,45 @@
   p {
     color: $black-3;
   }
+}
+
+// Sphere
+.box-value-sphere {
+  font-size: 24px;
+  height: 50%;
+  color: white;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 75% 30%,
+    rgba(161, 233, 161, 0.24) 5px,
+    rgba(0, 125, 0, 0.84) 8%,
+    rgba(0, 0, 0, 0.84) 75%,
+    rgba(92, 64, 137, 0.84) 100%
+  );
+  border-radius: 50%;
+  backdrop-filter: blur(200px);
+  box-shadow: -15px 15px 30px black;
+  overflow: hidden;
+}
+.purple-sphere {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 75% 30%,
+    #fff 5px,
+    #a16bfe 8%,
+    // #161226 75%,
+    #5c4089 100%
+  );
+  border-radius: 50%;
+  backdrop-filter: blur(200px);
+  // box-shadow: -15px 15px 30px black;
+  opacity: 1;
+  overflow: hidden;
+  z-index: -1;
 }
 
 // ----------------------
