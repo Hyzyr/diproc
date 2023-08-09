@@ -1244,6 +1244,17 @@
         }
       }
     }
+    .progress {
+      &Card {
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        h6 {
+          &:first-child {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
   .table {
     &__wrapper {
@@ -1268,11 +1279,7 @@
         }
       }
     }
-    &Progress {
-      .progressCard {
-        width: 100%;
-      }
-    }
+
     &About {
       &__item {
         &-content {
@@ -1401,6 +1408,19 @@
         }
       }
     }
+    &Progress {
+      .progress {
+        &Card {
+          width: 100%;
+          flex-wrap: row;
+          h6 {
+            &:first-child {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
   }
   .table {
     &__wrapper {
@@ -1452,9 +1472,15 @@
       }
     }
     &Progress {
-      .progressCard {
-        ._hide {
-          display: none;
+      .progress {
+        &Card {
+          flex-wrap: wrap;
+          gap: 10px 15px;
+          h6 {
+            &:first-child {
+              width: 100%;
+            }
+          }
         }
       }
     }

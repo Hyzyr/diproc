@@ -12975,6 +12975,14 @@ html[data-theme=dark] .range__button {
   .dashboardAbout._sm .dashboardAbout__item {
     width: calc(50% - 10px);
   }
+  .dashboard .progressCard {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px 15px;
+  }
+  .dashboard .progressCard h6:first-child {
+    width: 100%;
+  }
 
   .table__wrapper {
     height: calc(100vh - 250px);
@@ -12990,9 +12998,6 @@ html[data-theme=dark] .range__button {
   }
   .dashboardInfo__group .button {
     width: calc(33.3% - 11px);
-  }
-  .dashboardProgress .progressCard {
-    width: 100%;
   }
   .dashboardAbout__item-content {
     -webkit-box-orient: vertical;
@@ -13116,6 +13121,14 @@ html[data-theme=dark] .range__button {
   .dashboardAbout._sm .dashboardAbout__item:nth-child(3) {
     width: 100%;
   }
+  .dashboardProgress .progressCard {
+    width: 100%;
+    -ms-flex-wrap: row;
+        flex-wrap: row;
+  }
+  .dashboardProgress .progressCard h6:first-child {
+    width: auto;
+  }
 
   .table__wrapper {
     height: calc(100vh - 225px);
@@ -13159,8 +13172,13 @@ html[data-theme=dark] .range__button {
   .dashboardInfo__group .button {
     width: 100%;
   }
-  .dashboardProgress .progressCard ._hide {
-    display: none;
+  .dashboardProgress .progressCard {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px 15px;
+  }
+  .dashboardProgress .progressCard h6:first-child {
+    width: 100%;
   }
   .dashboardAbout p {
     font-size: 14px;
