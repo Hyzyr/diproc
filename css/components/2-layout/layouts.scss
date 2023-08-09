@@ -421,7 +421,7 @@
       h4 {
         font-weight: 500;
       }
-      &-wrapper {
+      &-group {
         display: flex;
         align-items: center;
         gap: 16px;
@@ -554,33 +554,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
-    }
-    &__cart {
-      width: calc(50% - 12px);
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid $white;
-      background: $white-2;
-      backdrop-filter: blur(16px);
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      &-line {
-        flex-grow: 1;
-        height: 4px;
-        border-radius: 32px;
-        background: $white;
-        position: relative;
-        .progress {
-          width: 50%;
-          height: 100%;
-          border-radius: inherit;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background: $primary;
-        }
-      }
     }
   }
   &About {
@@ -794,6 +767,33 @@
         }
       }
     }
+  }
+}
+.progress {
+  &Card {
+    width: calc(50% - 12px);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid $white;
+    background: $white-2;
+    backdrop-filter: blur(16px);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  flex-grow: 1;
+  height: 4px;
+  border-radius: 32px;
+  background: $white;
+  position: relative;
+  span {
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $primary;
   }
 }
 
@@ -1133,7 +1133,7 @@
     }
     &Progress {
       padding: 15px;
-      &__cart {
+      .progressCard {
         padding: 15px;
       }
     }
@@ -1269,7 +1269,7 @@
       }
     }
     &Progress {
-      &__cart {
+      .progressCard {
         width: 100%;
       }
     }
@@ -1452,7 +1452,7 @@
       }
     }
     &Progress {
-      &__cart {
+      .progressCard {
         ._hide {
           display: none;
         }
@@ -1567,7 +1567,7 @@
     }
     &Progress {
       padding: 15px;
-      &__cart {
+      .progressCard {
         padding: 15px;
       }
     }

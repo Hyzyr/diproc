@@ -11904,7 +11904,7 @@ html[data-theme=dark] .signInItem__image img._light {
 .dashboard__inner-score h4 {
   font-weight: 500;
 }
-.dashboard__inner-score-wrapper {
+.dashboard__inner-score-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11913,10 +11913,10 @@ html[data-theme=dark] .signInItem__image img._light {
           align-items: center;
   gap: 16px;
 }
-.dashboard__inner-score-wrapper .ico {
+.dashboard__inner-score-group .ico {
   font-size: 24px;
 }
-.dashboard__inner-score-wrapper hr {
+.dashboard__inner-score-group hr {
   width: 1px;
   height: 28px;
   background: var(--white);
@@ -12071,40 +12071,6 @@ html[data-theme=dark] .signInItem__image img._light {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 16px;
-}
-.dashboardProgress__cart {
-  width: calc(50% - 12px);
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid var(--white);
-  background: var(--white-2);
-  -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-.dashboardProgress__cart-line {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: 4px;
-  border-radius: 32px;
-  background: var(--white);
-  position: relative;
-}
-.dashboardProgress__cart-line .progress {
-  width: 50%;
-  height: 100%;
-  border-radius: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--primary);
 }
 .dashboardAbout {
   display: -webkit-box;
@@ -12372,6 +12338,41 @@ html[data-theme=dark] .dashboardAbout__item-circle h4 {
 }
 .slider__arrows .button.slider-next {
   padding-right: 0.7em;
+}
+
+.progress {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 4px;
+  border-radius: 32px;
+  background: var(--white);
+  position: relative;
+}
+.progressCard {
+  width: calc(50% - 12px);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--white);
+  background: var(--white-2);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.progress span {
+  width: 50%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary);
 }
 
 .avatar {
@@ -12789,7 +12790,7 @@ html[data-theme=dark] .range__button {
   .dashboardProgress {
     padding: 15px;
   }
-  .dashboardProgress__cart {
+  .dashboardProgress .progressCard {
     padding: 15px;
   }
 
@@ -12990,7 +12991,7 @@ html[data-theme=dark] .range__button {
   .dashboardInfo__group .button {
     width: calc(33.3% - 11px);
   }
-  .dashboardProgress__cart {
+  .dashboardProgress .progressCard {
     width: 100%;
   }
   .dashboardAbout__item-content {
@@ -13158,7 +13159,7 @@ html[data-theme=dark] .range__button {
   .dashboardInfo__group .button {
     width: 100%;
   }
-  .dashboardProgress__cart ._hide {
+  .dashboardProgress .progressCard ._hide {
     display: none;
   }
   .dashboardAbout p {
@@ -13349,7 +13350,7 @@ html[data-theme=dark] .range__button {
   .dashboardProgress {
     padding: 15px;
   }
-  .dashboardProgress__cart {
+  .dashboardProgress .progressCard {
     padding: 15px;
   }
 }
