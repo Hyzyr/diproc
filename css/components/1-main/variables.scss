@@ -14,6 +14,8 @@
   --violet-2: #ede9fe;
   --gradient: linear-gradient(135deg, rgba(76, 29, 149, 0) 0%, #4c1d95 100%);
   --green: #0f766e;
+  --bg: radial-gradient(ellipse at right, #e7e2e5, transparent),
+    radial-gradient(ellipse at left, #dccadd, transparent 80%);
 }
 
 :root[data-theme="dark"] {
@@ -32,6 +34,7 @@
   --violet-2: #1e293b;
   --gradient: linear-gradient(135deg, rgba(76, 29, 149, 0) 0%, #4c1d95 100%);
   --green: #0f766e;
+  --bg: linear-gradient(60deg, #0e1623 70%, #0c1623 90.9%);
 }
 
 $primary: var(--primary);
@@ -49,6 +52,6 @@ $red: var(--red);
 $blue: var(--blue);
 $gradient: var(--gradient);
 $green: var(--green);
-
+$bg: var(--bg);
 
 $font-primary: "Verdana", sans-serif;

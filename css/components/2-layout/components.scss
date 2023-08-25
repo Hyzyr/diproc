@@ -23,16 +23,19 @@
 
   input:focus,
   textarea:focus {
-    border-color: $primary;
+    border-color: $primary !important;
   }
   &--text {
     width: 100%;
     input,
     textarea {
-      border: 1px solid $white;
-      background: $white-2;
-      backdrop-filter: blur(16px);
       border-radius: 12px;
+      @include inLightMode {
+        @include glass2-light;
+      }
+      @include inDarkMode {
+        @include glass2-dark;
+      }
       &:hover {
         &::placeholder {
           opacity: 0.7;
@@ -62,11 +65,8 @@
 
   &--primary {
     color: $white;
-    // background: $primary;
     border-radius: 12px;
-    backdrop-filter: blur(16px);
     position: relative;
-    border-color: $primary;
     &._ico {
       gap: 8px;
       font-size: 14px;
@@ -91,8 +91,25 @@
     }
     &:hover {
       // background: transparent;
-      &::before {
-        opacity: 0.2;
+      opacity: 0.8;
+    }
+    @include inLightMode {
+      border: 1px solid hsla(0, 0%, 100%, 0.75);
+      box-shadow: -2px 3px 8px 1px #7b72a3;
+      border-color: $primary;
+      &:active {
+        opacity: 0.7;
+        box-shadow: -1px 1px 4px 1px #7b72a3;
+      }
+    }
+    @include inDarkMode {
+      box-shadow: -2px 3px 8px 1px #0c1623;
+      border-left: 1px solid hsla(0, 0%, 100%, 1);
+      border-bottom: 1px solid hsla(0, 0%, 100%, 1);
+      border-top: 1px solid hsla(0, 0%, 100%, 0.45);
+      border-right: 1px solid hsla(0, 0%, 100%, 0.45);
+      &:active {
+        opacity: 0.7;
       }
     }
     @include inDarkMode {
@@ -152,15 +169,18 @@
       height: 100%;
       cursor: pointer;
     }
+    @include inLightMode {
+      @include glass-light;
+    }
+    @include inDarkMode {
+      @include glass-dark;
+    }
   }
   &--border {
     font-size: 14px;
     color: $black-3;
     padding: 1.18em 1.65em;
     border-radius: 32px;
-    border: 1px solid $white;
-    background: $white-2;
-    backdrop-filter: blur(16px);
     white-space: nowrap;
     &::before {
       content: "";
@@ -186,6 +206,12 @@
       &::before {
         opacity: 0.1;
       }
+    }
+    @include inLightMode {
+      @include glass2-light;
+    }
+    @include inDarkMode {
+      @include glass2-dark;
     }
   }
 
@@ -288,10 +314,13 @@
     align-items: center;
     gap: 0.75em;
     border-radius: 0.75em;
-    border: 1px solid $white;
-    background: $white-2;
-    backdrop-filter: blur(16px);
     padding: 1.25em;
+    @include inLightMode {
+      @include glass2-light;
+    }
+    @include inDarkMode {
+      @include glass2-dark;
+    }
     label {
       font-size: 0.875em;
       font-weight: 500;
@@ -586,8 +615,8 @@
     mix-blend-mode: color;
     z-index: -1;
     display: none;
+    display: block;
     @include inDarkMode {
-      display: block;
     }
   }
   &-wrapper {
@@ -636,6 +665,25 @@
     justify-content: center;
   }
 }
+.glass {
+  background: hsla(0, 0%, 10%, 0.05);
+  box-shadow: -3px 4px 8px 1px #0c1623;
+  border-left: 1px solid hsla(0, 0%, 100%, 0.35);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.35);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+  border-right: 1px solid hsla(0, 0%, 100%, 0.15);
+  backdrop-filter: blur(40px);
+  &2 {
+    background: hsla(0, 0%, 10%, 0.45);
+    box-shadow: -3px 4px 8px 1px #0c1623;
+    border-left: 1px solid hsla(0, 0%, 100%, 0.3);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.3);
+    border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+    border-right: 1px solid hsla(0, 0%, 100%, 0.15);
+    backdrop-filter: blur(40px);
+  }
+}
+
 @keyframes spinner {
   0% {
     top: 36px;

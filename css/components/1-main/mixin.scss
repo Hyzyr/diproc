@@ -1,34 +1,40 @@
-@mixin noSelect{
+@mixin noSelect {
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-@mixin hideScroll{
+@mixin hideScroll {
   scrollbar-width: none; /* Firefox 64 */
   -ms-overflow-style: none; /* Internet Explorer 11 */
-  &::-webkit-scrollbar { /** WebKit */
+  &::-webkit-scrollbar {
+    /** WebKit */
     display: none;
   }
 }
 
-@mixin ellipsis($line : 3){
+@mixin ellipsis($line: 3) {
   display: -webkit-box;
   -webkit-line-clamp: $line;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@mixin ellipsisLine($line : 3){
+@mixin ellipsisLine($line: 3) {
   -webkit-line-clamp: $line;
 }
 
-@mixin inDarkMode{
+@mixin inDarkMode {
   html[data-theme="dark"] & {
+    @content;
+  }
+}
+@mixin inLightMode {
+  html[data-theme="light"] & {
     @content;
   }
 }
@@ -38,9 +44,54 @@
 //     color: $black
 //   }
 // }
+@mixin glass-light {
+  background: hsla(0, 0%, 100%, 0.05);
+  box-shadow: -2px 1px 3px 1px #6e6692;
+  border: 1px solid hsla(0, 0%, 100%, 0.15);
+  backdrop-filter: blur(40px);
+}
+@mixin glass2-light {
+  background: hsla(0, 0%, 100%, 0.35);
+  box-shadow: -3px 4px 8px 1px #7b72a3;
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+  backdrop-filter: blur(40px);
+}
+@mixin glass-dark {
+  background: hsla(0, 0%, 10%, 0.05);
+  box-shadow: -3px 4px 8px 1px #0c1623;
+  border-left: 1px solid hsla(0, 0%, 100%, 0.35);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.35);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+  border-right: 1px solid hsla(0, 0%, 100%, 0.15);
+  backdrop-filter: blur(40px);
+}
+@mixin glass2-dark {
+  background: hsla(0, 0%, 10%, 0.45);
+  box-shadow: -3px 4px 8px 1px #0c1623;
+  border-left: 1px solid hsla(0, 0%, 100%, 0.3);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.3);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+  border-right: 1px solid hsla(0, 0%, 100%, 0.15);
+  backdrop-filter: blur(40px);
+}
+@mixin glass-light-unset {
+  background: unset;
+  box-shadow: unset;
+  border: unset;
+  backdrop-filter: unset;
+}
+@mixin glass-dark-unset {
+  background: unset;
+  box-shadow: unset;
+  border-left: unset;
+  border-bottom: unset;
+  border-top: unset;
+  border-right: unset;
+  backdrop-filter: unset;
+}
 
 @mixin contentAbsolute {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
 }

@@ -86,10 +86,14 @@
   content: "\ea60";
 }
 
-.ri-arrow-right-s-line:before {
-  content: "\ea6e";
-}
+.ri-arrow-right-s-line:before { content: "\ea6e"; }
+
+.ri-arrow-left-s-line:before { content: "\ea64"; }
+
+.ri-check-line:before { content: "\eb7b"; }
 
 .ri-command-line:before {
   content: "\ebb8";
 }
+
+.ri-add-line:before { content: "\ea13"; }

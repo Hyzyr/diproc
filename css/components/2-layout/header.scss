@@ -55,16 +55,20 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    padding: 32px 16px 16px;
-    border: 1px solid $white;
-    background: $white-2;
-    backdrop-filter: blur(16px);
+    padding: 32px 6px 16px;
+    @include inLightMode {
+      @include glass-light;
+    }
+    @include inDarkMode {
+      @include glass-dark;
+    }
     &-group {
       display: flex;
       flex-direction: column;
       gap: 8px;
       flex: 1 0 0;
       overflow: auto;
+      padding: 10px;
     }
     h4 {
       font-weight: 600;
@@ -75,9 +79,6 @@
     position: absolute;
     top: 20px;
     right: -1em;
-    border: 1px solid $white;
-    background: $white-2;
-    backdrop-filter: blur(16px);
     // display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +88,13 @@
     height: 2em;
     display: none;
     cursor: pointer;
+    z-index: 2;
+    @include inLightMode {
+      @include glass2-light;
+    }
+    @include inDarkMode {
+      @include glass2-dark;
+    }
     .ico {
       font-size: 1.2em;
       color: $black;
@@ -151,15 +159,21 @@
     }
     &._footer {
       margin-top: auto;
-      background: $white-2;
-      border-color: $white;
-      backdrop-filter: blur(16px);
+      @include inLightMode {
+        @include glass2-light;
+      }
+      @include inDarkMode {
+        @include glass2-dark;
+      }
     }
     &.active {
-      background: $white-2;
-      border-color: $white;
-      backdrop-filter: blur(16px);
       color: $primary;
+      @include inLightMode {
+        @include glass2-light;
+      }
+      @include inDarkMode {
+        @include glass2-dark;
+      }
     }
   }
 }
@@ -298,18 +312,24 @@
         opacity: 0.7;
       }
       &.active {
-        background: transparent;
-        border-color: transparent;
-        backdrop-filter: unset;
         @include transition;
+        @include inLightMode {
+          @include glass-light-unset;
+        }
+        @include inDarkMode {
+          @include glass-dark-unset;
+        }
         &:hover {
           opacity: 0.7;
         }
       }
       &._footer {
-        background: transparent;
-        border-color: transparent;
-        backdrop-filter: unset;
+        @include inLightMode {
+          @include glass-light-unset;
+        }
+        @include inDarkMode {
+          @include glass-dark-unset;
+        }
       }
     }
     h4 {
@@ -375,8 +395,8 @@
       width: 100%;
       height: 100%;
       padding: 15px 20px;
-      border-radius:0;
-      border-width: 1px 0 0 0 ;
+      border-radius: 0;
+      border-width: 1px 0 0 0;
       &-group {
         flex-direction: row;
         padding-top: unset;
