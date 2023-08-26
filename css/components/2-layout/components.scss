@@ -571,19 +571,17 @@
     left: 0;
     transform: translate(0, -50%);
     border-radius: 32px;
-    border: 1px solid $white;
-    backdrop-filter: blur(16px);
     padding: 5px 11px;
     font-size: 12px;
     line-height: 1.4;
     color: $primary;
     white-space: nowrap;
-    background: $white;
     transition: 0.07s ease-out;
-
+    @include inLightMode {
+      @include glass-light;
+    }
     @include inDarkMode {
-      border-color: #8c8c9c;
-      background: #0d0c0e;
+      @include glass-dark;
     }
   }
 }

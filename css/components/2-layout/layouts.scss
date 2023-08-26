@@ -462,9 +462,12 @@
   &__range {
     padding: 22px 32px;
     border-radius: 16px;
-    border: 1px solid $white;
-    background: $white-2;
-    backdrop-filter: blur(16px);
+    @include inLightMode {
+      @include glass-light;
+    }
+    @include inDarkMode {
+      @include glass-dark;
+    }
   }
   &Card {
     display: flex;
@@ -519,28 +522,50 @@
         border-radius: 32px;
         padding: 1.05em 1.65em;
         &:hover {
-          opacity: 0.8;
+          opacity: 0.9;
         }
         &--border {
           color: $primary;
           border-color: $white;
-          &::before {
+          &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: inset -2px -2px 12px 1px $primary;
             opacity: 0;
-            background: transparent !important;
+            @include transition;
+            border-radius: inherit;
+            pointer-events: none;
+          }
+          &.active {
+            &::after {
+              opacity: 0;
+            }
+            &::before {
+              opacity: 0;
+            }
+            &:hover {
+              &::before {
+                opacity: 0.17;
+              }
+            }
           }
         }
         &._primary {
           color: $primary;
-          &:active {
-            &::before {
+          &.active {
+            &::after {
               opacity: 1;
               box-shadow: inset -2px -2px 12px 1px $primary;
             }
           }
           &--border {
             border-color: $primary;
-            &:active {
-              &::before {
+            &.active {
+              &::after {
                 opacity: 1;
                 box-shadow: inset -2px -2px 12px 1px $primary;
               }
@@ -549,8 +574,8 @@
         }
         &._blue {
           color: $blue;
-          &:active {
-            &::before {
+          &.active {
+            &::after {
               opacity: 1;
               box-shadow: inset -2px -2px 12px 1px $blue;
             }
@@ -561,8 +586,8 @@
           &--border {
             color: $blue;
             border-color: $blue;
-            &:active {
-              &::before {
+            &.active {
+              &::after {
                 opacity: 1;
                 box-shadow: inset -2px -2px 12px 1px $blue;
               }
@@ -574,8 +599,8 @@
         }
         &._red {
           color: $red;
-          &:active {
-            &::before {
+          &.active {
+            &::after {
               opacity: 1;
               box-shadow: inset -2px -2px 12px 1px $red;
             }
@@ -586,8 +611,8 @@
           &--border {
             color: $red;
             border-color: $red;
-            &:active {
-              &::before {
+            &.active {
+              &::after {
                 opacity: 1;
                 box-shadow: inset -2px -2px 12px 1px $red;
               }
@@ -602,8 +627,8 @@
           &::before {
             background: $black;
           }
-          &:active {
-            &::before {
+          &.active {
+            &::after {
               opacity: 1;
               box-shadow: inset -2px -2px 12px 1px $black;
             }
@@ -611,8 +636,8 @@
           &--border {
             color: $black;
             border-color: $black;
-            &:active {
-              &::before {
+            &.active {
+              &::after {
                 opacity: 1;
                 box-shadow: inset -2px -2px 12px 1px $black;
               }

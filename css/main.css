@@ -432,6 +432,10 @@
   content: "";
 }
 
+.ri-spam-2-line:before {
+  content: "";
+}
+
 :root {
   --primary: #14b8a6;
   --white: #fff;
@@ -1312,21 +1316,32 @@ html[data-theme=dark] .range-track {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   border-radius: 32px;
-  border: 1px solid var(--white);
-  -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
   padding: 5px 11px;
   font-size: 12px;
   line-height: 1.4;
   color: var(--primary);
   white-space: nowrap;
-  background: var(--white);
   -webkit-transition: 0.07s ease-out;
   transition: 0.07s ease-out;
 }
+html[data-theme=light] .range-button {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: -2px 1px 3px 1px #6e6692;
+          box-shadow: -2px 1px 3px 1px #6e6692;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
 html[data-theme=dark] .range-button {
-  border-color: #8c8c9c;
-  background: #0d0c0e;
+  background: rgba(26, 26, 26, 0.05);
+  -webkit-box-shadow: -3px 4px 8px 1px #0c1623;
+          box-shadow: -3px 4px 8px 1px #0c1623;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
 }
 
 .purple-sphere {
@@ -2466,10 +2481,25 @@ html[data-theme=dark] .dashboard__inner-score {
 .dashboard__range {
   padding: 22px 32px;
   border-radius: 16px;
-  border: 1px solid var(--white);
-  background: var(--white-2);
-  -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
+}
+html[data-theme=light] .dashboard__range {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: -2px 1px 3px 1px #6e6692;
+          box-shadow: -2px 1px 3px 1px #6e6692;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+html[data-theme=dark] .dashboard__range {
+  background: rgba(26, 26, 26, 0.05);
+  -webkit-box-shadow: -3px 4px 8px 1px #0c1623;
+          box-shadow: -3px 4px 8px 1px #0c1623;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
 }
 .dashboardCard {
   display: -webkit-box;
@@ -2571,20 +2601,41 @@ html[data-theme=dark] .dashboardInfo {
   padding: 1.05em 1.65em;
 }
 .dashboardInfo__group .button:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .dashboardInfo__group .button--border {
   color: var(--primary);
   border-color: var(--white);
 }
-.dashboardInfo__group .button--border::before {
+.dashboardInfo__group .button--border::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: inset -2px -2px 12px 1px var(--primary);
+          box-shadow: inset -2px -2px 12px 1px var(--primary);
   opacity: 0;
-  background: transparent !important;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.dashboardInfo__group .button--border.active::after {
+  opacity: 0;
+}
+.dashboardInfo__group .button--border.active::before {
+  opacity: 0;
+}
+.dashboardInfo__group .button--border.active:hover::before {
+  opacity: 0.17;
 }
 .dashboardInfo__group .button._primary {
   color: var(--primary);
 }
-.dashboardInfo__group .button._primary:active::before {
+.dashboardInfo__group .button._primary.active::after {
   opacity: 1;
   -webkit-box-shadow: inset -2px -2px 12px 1px var(--primary);
           box-shadow: inset -2px -2px 12px 1px var(--primary);
@@ -2592,7 +2643,7 @@ html[data-theme=dark] .dashboardInfo {
 .dashboardInfo__group .button._primary--border {
   border-color: var(--primary);
 }
-.dashboardInfo__group .button._primary--border:active::before {
+.dashboardInfo__group .button._primary--border.active::after {
   opacity: 1;
   -webkit-box-shadow: inset -2px -2px 12px 1px var(--primary);
           box-shadow: inset -2px -2px 12px 1px var(--primary);
@@ -2600,7 +2651,7 @@ html[data-theme=dark] .dashboardInfo {
 .dashboardInfo__group .button._blue {
   color: var(--blue);
 }
-.dashboardInfo__group .button._blue:active::before {
+.dashboardInfo__group .button._blue.active::after {
   opacity: 1;
   -webkit-box-shadow: inset -2px -2px 12px 1px var(--blue);
           box-shadow: inset -2px -2px 12px 1px var(--blue);
@@ -2612,7 +2663,7 @@ html[data-theme=dark] .dashboardInfo {
   color: var(--blue);
   border-color: var(--blue);
 }
-.dashboardInfo__group .button._blue--border:active::before {
+.dashboardInfo__group .button._blue--border.active::after {
   opacity: 1;
   -webkit-box-shadow: inset -2px -2px 12px 1px var(--blue);
           box-shadow: inset -2px -2px 12px 1px var(--blue);
@@ -2623,7 +2674,7 @@ html[data-theme=dark] .dashboardInfo {
 .dashboardInfo__group .button._red {
   color: var(--red);
 }
-.dashboardInfo__group .button._red:active::before {
+.dashboardInfo__group .button._red.active::after {
   opacity: 1;
   -webkit-box-shadow: inset -2px -2px 12px 1px var(--red);
           box-shadow: inset -2px -2px 12px 1px var(--red);
@@ -2635,7 +2686,7 @@ html[data-theme=dark] .dashboardInfo {
   color: var(--red);
   border-color: var(--red);
 }
-.dashboardInfo__group .button._red--border:active::before {
+.dashboardInfo__group .button._red--border.active::after {
   opacity: 1;
   -webkit-box-shadow: inset -2px -2px 12px 1px var(--red);
           box-shadow: inset -2px -2px 12px 1px var(--red);
@@ -2649,7 +2700,7 @@ html[data-theme=dark] .dashboardInfo {
 .dashboardInfo__group .button._black::before {
   background: var(--black);
 }
-.dashboardInfo__group .button._black:active::before {
+.dashboardInfo__group .button._black.active::after {
   opacity: 1;
   -webkit-box-shadow: inset -2px -2px 12px 1px var(--black);
           box-shadow: inset -2px -2px 12px 1px var(--black);
@@ -2658,7 +2709,7 @@ html[data-theme=dark] .dashboardInfo {
   color: var(--black);
   border-color: var(--black);
 }
-.dashboardInfo__group .button._black--border:active::before {
+.dashboardInfo__group .button._black--border.active::after {
   opacity: 1;
   -webkit-box-shadow: inset -2px -2px 12px 1px var(--black);
           box-shadow: inset -2px -2px 12px 1px var(--black);
