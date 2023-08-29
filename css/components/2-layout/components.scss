@@ -578,10 +578,12 @@
     white-space: nowrap;
     transition: 0.07s ease-out;
     @include inLightMode {
-      @include glass-light;
+      box-shadow: -3px 4px 8px 1px #7b72a3;
+      background: hsla(0, 0%, 100%, 1);
     }
     @include inDarkMode {
-      @include glass-dark;
+      box-shadow: -3px 4px 8px 1px #0c1623;
+      background: hsla(0, 0%, 10%, 1);
     }
   }
 }
@@ -643,15 +645,30 @@
 .spinner {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  font-size: 80px;
+  width: 1em;
+  height: 1em;
+
+  &._inline {
+    font-size: 1.5em;
+    color: inherit;
+    position: relative;
+    bottom: -0.05em;
+
+    & > div {
+      border: 2px solid currentColor;
+    }
+  }
 
   & > div {
     position: absolute;
+    top: 50%;
+    left: 50%;
     border: 4px solid $primary;
     opacity: 1;
     border-radius: 50%;
     animation: spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    transform: translate(-50%, -50%);
     &:nth-child(2) {
       animation-delay: -0.5s;
     }
@@ -684,31 +701,23 @@
 
 @keyframes spinner {
   0% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 0;
   }
   4.9% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 0;
   }
   5% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 1;
   }
   100% {
-    top: 0px;
-    left: 0px;
-    width: 72px;
-    height: 72px;
+    width: 0.95em;
+    height: 0.95em;
     opacity: 0;
   }
 }

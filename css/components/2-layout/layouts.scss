@@ -944,15 +944,22 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 20px 10px;
+    flex-wrap: wrap;
     @include inLightMode {
       @include glass2-light;
     }
     @include inDarkMode {
       @include glass2-dark;
     }
+    h6 {
+      &:nth-child(1) {
+        width: 100%;
+      }
+    }
   }
-  flex-grow: 1;
+  width: calc(100% - 45px);
   height: 4px;
   border-radius: 32px;
   background: $white;
@@ -1198,7 +1205,12 @@
     background: $white-2;
     backdrop-filter: blur(16px);
     font-size: 20px;
-
+    @include inLightMode {
+      @include glass2-light;
+    }
+    @include inDarkMode {
+      @include glass2-dark;
+    }
     &-header {
       cursor: pointer;
       position: relative;
@@ -1253,7 +1265,7 @@
   gap: 32px;
   overflow: auto;
   flex-grow: 1;
-  padding: 0 10px;
+  padding: 0 10px 25px 10px;
   margin: 0 -10px;
 }
 // ----------------------
@@ -1447,13 +1459,7 @@
     }
     .progress {
       &Card {
-        flex-wrap: wrap;
-        gap: 10px 15px;
-        h6 {
-          &:first-child {
-            width: 100%;
-          }
-        }
+        gap: 15px 10px;
       }
     }
   }
@@ -1691,19 +1697,7 @@
         padding: 15px;
       }
     }
-
     &Progress {
-      .progress {
-        &Card {
-          flex-wrap: wrap;
-          gap: 10px 15px;
-          h6 {
-            &:first-child {
-              width: 100%;
-            }
-          }
-        }
-      }
     }
     &About {
       p {
@@ -1826,5 +1820,6 @@
   }
   .scrollSection {
     gap: 20px;
+    padding-bottom: 20px;
   }
 }

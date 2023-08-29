@@ -1325,23 +1325,14 @@ html[data-theme=dark] .range-track {
   transition: 0.07s ease-out;
 }
 html[data-theme=light] .range-button {
-  background: rgba(255, 255, 255, 0.05);
-  -webkit-box-shadow: -2px 1px 3px 1px #6e6692;
-          box-shadow: -2px 1px 3px 1px #6e6692;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+  -webkit-box-shadow: -3px 4px 8px 1px #7b72a3;
+          box-shadow: -3px 4px 8px 1px #7b72a3;
+  background: white;
 }
 html[data-theme=dark] .range-button {
-  background: rgba(26, 26, 26, 0.05);
   -webkit-box-shadow: -3px 4px 8px 1px #0c1623;
           box-shadow: -3px 4px 8px 1px #0c1623;
-  border-left: 1px solid rgba(255, 255, 255, 0.35);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+  background: #1a1a1a;
 }
 
 .purple-sphere {
@@ -1397,16 +1388,30 @@ html[data-theme=dark] .range-button {
 .spinner {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  font-size: 80px;
+  width: 1em;
+  height: 1em;
+}
+.spinner._inline {
+  font-size: 1.5em;
+  color: inherit;
+  position: relative;
+  bottom: -0.05em;
+}
+.spinner._inline > div {
+  border: 2px solid currentColor;
 }
 .spinner > div {
   position: absolute;
+  top: 50%;
+  left: 50%;
   border: 4px solid var(--primary);
   opacity: 1;
   border-radius: 50%;
   -webkit-animation: spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
           animation: spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .spinner > div:nth-child(2) {
   -webkit-animation-delay: -0.5s;
@@ -1450,62 +1455,46 @@ html[data-theme=dark] .range-button {
 
 @-webkit-keyframes spinner {
   0% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 0;
   }
   4.9% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 0;
   }
   5% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 1;
   }
   100% {
-    top: 0px;
-    left: 0px;
-    width: 72px;
-    height: 72px;
+    width: 0.95em;
+    height: 0.95em;
     opacity: 0;
   }
 }
 
 @keyframes spinner {
   0% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 0;
   }
   4.9% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 0;
   }
   5% {
-    top: 36px;
-    left: 36px;
     width: 0;
     height: 0;
     opacity: 1;
   }
   100% {
-    top: 0px;
-    left: 0px;
-    width: 72px;
-    height: 72px;
+    width: 0.95em;
+    height: 0.95em;
     opacity: 0;
   }
 }
@@ -3104,9 +3093,7 @@ html[data-theme=dark] .slider-arrow._inLine {
 }
 
 .progress {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: calc(100% - 45px);
   height: 4px;
   border-radius: 32px;
   background: var(--white);
@@ -3122,7 +3109,12 @@ html[data-theme=dark] .slider-arrow._inLine {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 html[data-theme=light] .progressCard {
   background: rgba(255, 255, 255, 0.35);
@@ -3142,6 +3134,9 @@ html[data-theme=dark] .progressCard {
   border-right: 1px solid rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
+}
+.progressCard h6:nth-child(1) {
+  width: 100%;
 }
 .progress span {
   width: 50%;
@@ -3462,6 +3457,25 @@ html[data-theme=light] .form__container-group .input textarea {
           backdrop-filter: blur(16px);
   font-size: 20px;
 }
+html[data-theme=light] .faq__item {
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-box-shadow: -3px 4px 8px 1px #7b72a3;
+          box-shadow: -3px 4px 8px 1px #7b72a3;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+html[data-theme=dark] .faq__item {
+  background: rgba(26, 26, 26, 0.45);
+  -webkit-box-shadow: -3px 4px 8px 1px #0c1623;
+          box-shadow: -3px 4px 8px 1px #0c1623;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
 .faq__item-header {
   cursor: pointer;
   position: relative;
@@ -3519,7 +3533,7 @@ html[data-theme=light] .form__container-group .input textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 0 10px;
+  padding: 0 10px 25px 10px;
   margin: 0 -10px;
 }
 
@@ -3857,12 +3871,7 @@ html[data-theme=light] .form__container-group .input textarea {
     gap: 12px;
   }
   .dashboard .progressCard {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 10px 15px;
-  }
-  .dashboard .progressCard h6:first-child {
-    width: 100%;
+    gap: 15px 10px;
   }
 
   .table__wrapper {
@@ -4077,14 +4086,6 @@ html[data-theme=light] .form__container-group .input textarea {
   .dashboardInfo._resources {
     gap: 10px;
     padding: 15px;
-  }
-  .dashboardProgress .progressCard {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 10px 15px;
-  }
-  .dashboardProgress .progressCard h6:first-child {
-    width: 100%;
   }
   .dashboardAbout p {
     font-size: 14px;
@@ -4304,5 +4305,6 @@ html[data-theme=light] .form__container-group .input textarea {
 
   .scrollSection {
     gap: 20px;
+    padding-bottom: 20px;
   }
 }
